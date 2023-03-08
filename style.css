@@ -2,14 +2,27 @@ body {
     background-color: #141414;
 }
 
-div {
+div.logo,
+div.footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div.logo {
     height: 80vh;
 }
 
-div img {
+div.logo img {
     width: 50%;
     max-width: 512px;
+}
+
+div.footer a {
+    color: #808080;
+}
+
+div.footer a svg {
+    height: 1em;
+    width: 1em;
 }
