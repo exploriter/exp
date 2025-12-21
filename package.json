@@ -1,0 +1,20 @@
+{
+  "name": "exploriter",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "tailwind:watch": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --watch",
+    "eleventy:serve": "npx @11ty/eleventy --serve",
+    "dev": "npm run clean && npm-run-all --parallel tailwind:watch eleventy:serve",
+    "build": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --minify && npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "npm-run-all2": "^8.0.4"
+  }
+}
