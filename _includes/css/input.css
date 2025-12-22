@@ -156,7 +156,7 @@
     }
 
     main a {
-        @apply underline decoration-stone-300 hover:decoration-stone-900 decoration-1 underline-offset-2;
+        @apply underline decoration-stone-300 hover:decoration-stone-900 decoration-1 underline-offset-2 hover:text-stone-950;
     }
 
     .strike {
