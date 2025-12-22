@@ -3,8 +3,6 @@
 @source "./_includes/**/*.html";
 @source "./**/*.{html,md}";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
     --font-averia: 'Averia Serif Libre', serif;
     --font-ibmplex: 'IBM Plex Mono', monospace;
@@ -139,16 +137,29 @@
 
     strong, b {
         @apply text-stone-950;
-        @apply dark:text-stone-100;
     }
 
-    a {
-        @apply underline;
-        @apply decoration-stone-300;
-        @apply dark:decoration-stone-600;
-        @apply hover:decoration-stone-900;
-        @apply dark:hover:decoration-stone-100;
-        @apply decoration-1;
-        @apply underline-offset-2;
+    ol {
+        @apply list-decimal ml-12 my-6;
+    }
+
+    ol li {
+        @apply py-1;
+    }
+
+    main h1 {
+        @apply text-xl font-bold mb-6;
+    }
+
+    main p {
+        @apply mb-6 not-has-[+p]:mb-0;
+    }
+
+    main a {
+        @apply underline decoration-stone-300 hover:decoration-stone-900 decoration-1 underline-offset-2;
+    }
+
+    .strike {
+        @apply opacity-65 line-through decoration-1 decoration-stone-500;
     }
 }
