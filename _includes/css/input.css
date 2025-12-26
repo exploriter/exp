@@ -5,10 +5,18 @@
 
 @theme {
     --font-averia: 'Averia Serif Libre', serif;
+    --font-jersey: 'Jersey 10', sans-serif;
     --font-ibmplex: 'IBM Plex Mono', monospace;
 }
 
 @layer base {
+    @font-face {
+        font-family: 'Jersey 10';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Jersey10/jersey-400.woff2) format('woff2');
+    }
     @font-face {
         font-family: 'Averia Serif Libre';
         font-style: normal;
@@ -161,10 +169,6 @@
 
     main p {
         @apply mb-6 not-has-[+p]:mb-0;
-    }
-
-    main a {
-        @apply underline decoration-stone-300 hover:decoration-stone-900 decoration-1 underline-offset-2 hover:text-stone-950;
     }
 
     .strike {
