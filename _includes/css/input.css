@@ -6,10 +6,25 @@
 @theme {
     --font-averia: 'Averia Serif Libre', serif;
     --font-jersey: 'Jersey 10', sans-serif;
+    --font-inter: 'Inter', sans-serif;
     --font-ibmplex: 'IBM Plex Mono', monospace;
 }
 
 @layer base {
+    @font-face {
+        font-family: 'Inter';
+        src: url(/fonts/Inter/inter.var.woff2) format('woff2-variations');
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Inter';
+        src: url(/fonts/Inter/inter.italic.var.woff2) format('woff2-variations');
+        font-weight: 100 900;
+        font-style: italic;
+        font-display: swap;
+    }
     @font-face {
         font-family: 'Jersey 10';
         font-style: normal;
