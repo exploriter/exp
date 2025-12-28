@@ -144,6 +144,12 @@
         font-display: swap;
         src: url(/fonts/IBMPlexMono/ipm-700i.woff2) format('woff2');
     }
+
+    main p a,
+    main li a {
+        @apply underline decoration-stone-400/80 hover:decoration-stone-800 hover:decoration-2;
+    }
+
     em {
         @apply font-medium;
     }
