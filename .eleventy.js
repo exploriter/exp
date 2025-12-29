@@ -1,8 +1,11 @@
+import {eleventyImageTransformPlugin} from "@11ty/eleventy-img";
+
 // noinspection JSUnusedGlobalSymbols
 export default async function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy({ "_includes/css/output.css": "style.css" });
-    eleventyConfig.addPassthroughCopy({ "_includes/fonts": "fonts" });
+    eleventyConfig.addPassthroughCopy({"_includes/css/output.css": "style.css"});
+    eleventyConfig.addPassthroughCopy({"_includes/fonts": "fonts"});
     eleventyConfig.addWatchTarget("_includes/css/output.css");
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
     eleventyConfig.setServerOptions({
         watch: ["_site/**/*.css"],
