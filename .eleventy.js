@@ -12,6 +12,48 @@ export default async function (eleventyConfig) {
         delay: 1000
     });
 
+    // Helper function to strip leading non-letter characters for sorting
+    const getSortableTitle = (title) => {
+        return title.replace(/^[^a-zA-Z]+/, '');
+    };
+
+    // Create sorted collections
+    eleventyConfig.addCollection("conceptSorted", function(collectionApi) {
+        return collectionApi.getFilteredByTag("concept").sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
+    eleventyConfig.addCollection("storySorted", function(collectionApi) {
+        return collectionApi.getFilteredByTag("story").sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
+    eleventyConfig.addCollection("projectSorted", function(collectionApi) {
+        return collectionApi.getFilteredByTag("project").sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
+    eleventyConfig.addCollection("practiceSorted", function(collectionApi) {
+        return collectionApi.getFilteredByTag("practice").sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
+    eleventyConfig.addCollection("methodSorted", function(collectionApi) {
+        return collectionApi.getFilteredByTag("method").sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
+    eleventyConfig.addCollection("playgroundSorted", function(collectionApi) {
+        return collectionApi.getFilteredByTag("playground").sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
     return {
         dir: {
             input: ".",
