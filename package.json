@@ -5,17 +5,20 @@
   "scripts": {
     "clean": "rm -rf _site",
     "tailwind:watch": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --watch",
+    "js:watch": "npx esbuild _includes/js/main.js --bundle --outfile=_includes/js/bundle.js --watch",
     "eleventy:serve": "npx @11ty/eleventy --serve",
-    "dev": "npm run clean && npm-run-all --parallel tailwind:watch eleventy:serve",
-    "build": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --minify && npx @11ty/eleventy"
+    "dev": "npm run clean && npm-run-all --parallel tailwind:watch js:watch eleventy:serve",
+    "build": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --minify && npx esbuild _includes/js/main.js --bundle --minify --outfile=_includes/js/bundle.js && npx @11ty/eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
     "@tailwindcss/cli": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "tippy.js": "^6.3.7"
   },
   "devDependencies": {
+    "esbuild": "^0.27.2",
     "npm-run-all2": "^8.0.4"
   }
 }

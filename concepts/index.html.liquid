@@ -2,22 +2,64 @@
 permalink: /concepts/
 title: Concepts
 ---
+<div class="max-w-5xl">
+    <div class="border border-dashed border-stone-300 p-4 bg-stone-100 mb-12">
+        <header class="mb-4">
+            <h1 class="uppercase tracking-wider text-lg font-medium mb-1">Concepts</h1>
+            <p class="text-sm italic">Foundational ideas that explain what things are or how they relate.</p>
+        </header>
+        <div class="flex flex-wrap gap-px justify-stretch bg-stone-50">
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">query</p>
+                <p class="text-sm">WHAT</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">conveys</p>
+                <p class="text-sm">Propositional Knowing</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">function</p>
+                <p class="text-sm">Understanding</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">imparts</p>
+                <p class="text-sm">Beliefs & Ideas</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">realizes</p>
+                <p class="text-sm">Sense of Truth</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">cognate</p>
+                <p class="text-sm">Dianoia · διάνοια</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">memory</p>
+                <p class="text-sm">Semantic</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">domain</p>
+                <p class="text-sm">Content</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="max-w-4xl">
     <ol>
         {%- for post in collections.conceptSorted -%}
             <li>
-                <span class="inline-flex items-center group">
+                <span class="inline-flex items-start group">
                 {% if post.data.tags contains "collection" %}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                         class="size-4 mr-2 opacity-40 group-hover:opacity-100 group-hover:text-emerald-600"
-                         viewBox="0 0 16 16">
+                         class="size-4 mr-2 mt-1.25 shrink-0 opacity-40 group-hover:opacity-100 group-hover:text-emerald-600 cursor-help"
+                         viewBox="0 0 16 16" data-tooltip="Concept Collection">
                         <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                     </svg>
                 {% else %}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                         class="size-4 mr-2 opacity-40 group-hover:opacity-100 group-hover:text-emerald-600"
-                         viewBox="0 0 16 16">
+                         class="size-4 mr-2 mt-1.25 shrink-0 opacity-40 group-hover:opacity-100 group-hover:text-emerald-600 cursor-help"
+                         viewBox="0 0 16 16" data-tooltip="Individual Concept">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                     </svg>
                 {% endif %}

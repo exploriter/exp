@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body class="antialiased font-ibmplex text-base leading-relaxed text-stone-900 bg-stone-50 selection:bg-yellow-300 selection:text-yellow-900">
@@ -18,7 +21,7 @@
             </h1>
             <div class="ml-6">
                 <div class="flex items-center space-x-3">
-                    <a href="/about/jason/" class="group relative">
+                    <a href="/about/jason/" class="group relative" data-tooltip="About Me">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor"
                              class="size-6 transition-opacity duration-300 group-hover:opacity-0">
@@ -32,7 +35,7 @@
                                   clip-rule="evenodd"/>
                         </svg>
                     </a>
-                    <a href="/about/" class="group relative">
+                    <a href="/about/" class="group relative" data-tooltip="About the Site">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor" class="size-6 transition-opacity duration-300 group-hover:opacity-0">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -53,5 +56,6 @@
 <main class="px-6 md:px-12 pb-12">
     {{ content }}
 </main>
+<script src="/bundle.js"></script>
 </body>
 </html>
