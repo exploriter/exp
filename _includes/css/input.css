@@ -8,6 +8,16 @@
     --font-jersey: 'Jersey 10', sans-serif;
     --font-inter: 'Inter', sans-serif;
     --font-ibmplex: 'IBM Plex Mono', monospace;
+    --animate-blink: blink 0.7s infinite;
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
 }
 
 @layer base {

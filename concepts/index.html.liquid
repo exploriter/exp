@@ -5,7 +5,10 @@ title: Concepts
 <div class="max-w-5xl">
     <div class="border border-dashed border-stone-300 p-4 bg-stone-100 mb-12">
         <header class="mb-4">
-            <h1 class="uppercase tracking-wider text-lg font-medium mb-1">Concepts</h1>
+            <h1 class="uppercase tracking-wider text-lg font-medium mb-1">
+                Concepts <span class="lowercase text-emerald-600/80">/ <span id="typewriter"
+                                                                             class="after:content-['\_'] after:animate-blink italic font-normal"></span></span>
+            </h1>
             <p class="text-sm italic">Foundational ideas that explain what things are or how they relate.</p>
         </header>
         <div class="flex flex-wrap gap-px justify-stretch bg-stone-50">
@@ -69,3 +72,39 @@ title: Concepts
         {%- endfor -%}
     </ol>
 </div>
+
+<script>
+    (() => {
+        const words = ['Aphorism', 'Argument', 'Axiom', 'Clarification', 'Cognitive Bias', 'Definition', 'Dialectic', 'Discipline', 'Distinction', 'Expression', 'Fallacy', 'Framework', 'Heuristic', 'Hypothesis', 'Law', 'Mental Model', 'Paradigm', 'Primitive', 'Principle', 'Proposition', 'Proverb', 'Rule', 'System', 'Taxonomy', 'Term', 'Theory', 'Value'];
+        const el = document.getElementById("typewriter");
+        let i = 0, j = 0;
+        let deleting = false;
+
+        const type = () => {
+            const word = words[i];
+
+            if (deleting) {
+                j--;
+                el.textContent = word.substring(0, j);
+                if (j === 0) {
+                    deleting = false;
+                    i = (i + 1) % words.length;
+                }
+            } else {
+                j++;
+                el.textContent = word.substring(0, j);
+                if (j === word.length) {
+                    // Word is fully typed (with the last letter visible)—pause for 2 seconds, then start deletion.
+                    return setTimeout(() => {
+                        deleting = true;
+                        type();
+                    }, 2500);
+                }
+            }
+
+            setTimeout(type, 80);
+        };
+
+        type();
+    })();
+</script>
