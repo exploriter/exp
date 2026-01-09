@@ -2,6 +2,51 @@
 title: Methods
 permalink: /methods/
 ---
+<div class="max-w-5xl">
+    <div class="border border-dashed border-stone-300 p-4 bg-stone-100 mb-12">
+        <header class="mb-4">
+            <h1 class="uppercase tracking-wider text-lg font-medium mb-1">
+                Methods <span class="lowercase text-emerald-600/80">/ <span id="typewriter"
+                                                                            class="after:content-['\_'] after:animate-blink italic font-normal"></span></span>
+            </h1>
+            <p class="text-sm italic">Systematic approaches and techniques that explain how to do something.</p>
+        </header>
+        <div class="flex flex-wrap gap-px justify-stretch bg-stone-50">
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">query</p>
+                <p class="text-sm">HOW</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">conveys</p>
+                <p class="text-sm">Procedural Knowing</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">function</p>
+                <p class="text-sm">Power & Ability</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">imparts</p>
+                <p class="text-sm">Skills & Techniques</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">realizes</p>
+                <p class="text-sm">Sense of Effectiveness</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">cognate</p>
+                <p class="text-sm">Techne · τέχνη</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">memory</p>
+                <p class="text-sm">Procedural</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">domain</p>
+                <p class="text-sm">Content (context)</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="max-w-4xl">
     <ol>
@@ -19,3 +64,39 @@ permalink: /methods/
         {%- endfor -%}
     </ol>
 </div>
+
+<script>
+    (() => {
+        const words = ['Algorithm', 'Approach', 'Blueprint', 'Design Pattern', 'Exercise', 'Framework', 'Guideline', 'Instruction', 'Procedure', 'Process', 'Protocol', 'Recipe', 'Strategy', 'System', 'Tactic', 'Technique', 'Tool', 'Workflow'];
+        const el = document.getElementById("typewriter");
+        let i = 0, j = 0;
+        let deleting = false;
+
+        const type = () => {
+            const word = words[i];
+
+            if (deleting) {
+                j--;
+                el.textContent = word.substring(0, j);
+                if (j === 0) {
+                    deleting = false;
+                    i = (i + 1) % words.length;
+                }
+            } else {
+                j++;
+                el.textContent = word.substring(0, j);
+                if (j === word.length) {
+                    // Word is fully typed (with the last letter visible)—pause for 2 seconds, then start deletion.
+                    return setTimeout(() => {
+                        deleting = true;
+                        type();
+                    }, 2500);
+                }
+            }
+
+            setTimeout(type, 80);
+        };
+
+        type();
+    })();
+</script>

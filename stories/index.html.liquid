@@ -2,6 +2,51 @@
 title: Stories
 permalink: /stories/
 ---
+<div class="max-w-5xl">
+    <div class="border border-dashed border-stone-300 p-4 bg-stone-100 mb-12">
+        <header class="mb-4">
+            <h1 class="uppercase tracking-wider text-lg font-medium mb-1">
+                Stories <span class="lowercase text-emerald-600/80">/ <span id="typewriter"
+                                                                            class="after:content-['\_'] after:animate-blink italic font-normal"></span></span>
+            </h1>
+            <p class="text-sm italic">Accounts that explain why things happen(ed) through context and perspective.</p>
+        </header>
+        <div class="flex flex-wrap gap-px justify-stretch bg-stone-50">
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">query</p>
+                <p class="text-sm">WHY (when/who/where)</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">conveys</p>
+                <p class="text-sm">Perspectival Knowing</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">function</p>
+                <p class="text-sm">Awareness</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">imparts</p>
+                <p class="text-sm">Perspective & Experience</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">realizes</p>
+                <p class="text-sm">Sense of Presence</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">cognate</p>
+                <p class="text-sm">Noesis · νόησις</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">memory</p>
+                <p class="text-sm">Episodic</p>
+            </div>
+            <div class="ring ring-stone-200 p-4 grow">
+                <p class="text-xs font-light uppercase mb-1">domain</p>
+                <p class="text-sm">Context (content)</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="max-w-4xl">
     <ol>
@@ -21,3 +66,39 @@ permalink: /stories/
         {%- endfor -%}
     </ol>
 </div>
+
+<script>
+    (() => {
+        const words = ['Allegory', 'Anecdote', 'Biography', 'Case Study', 'Chronicle', 'Experience', 'Fable', 'Folktale', 'Frame', 'History', 'Insight', 'Intuition', 'Legend', 'Metaphor', 'Myth', 'Narrative', 'Observation', 'Parable', 'Perspective', 'Testimony', 'Thought Experiment', 'Worldview'];
+        const el = document.getElementById("typewriter");
+        let i = 0, j = 0;
+        let deleting = false;
+
+        const type = () => {
+            const word = words[i];
+
+            if (deleting) {
+                j--;
+                el.textContent = word.substring(0, j);
+                if (j === 0) {
+                    deleting = false;
+                    i = (i + 1) % words.length;
+                }
+            } else {
+                j++;
+                el.textContent = word.substring(0, j);
+                if (j === word.length) {
+                    // Word is fully typed (with the last letter visible)—pause for 2 seconds, then start deletion.
+                    return setTimeout(() => {
+                        deleting = true;
+                        type();
+                    }, 2500);
+                }
+            }
+
+            setTimeout(type, 80);
+        };
+
+        type();
+    })();
+</script>
