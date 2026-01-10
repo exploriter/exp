@@ -56,6 +56,20 @@ export default async function (eleventyConfig) {
         });
     });
 
+    // Combine all content into a single sorted collection
+    eleventyConfig.addCollection("allContentSorted", function(collectionApi) {
+        return [
+            ...collectionApi.getFilteredByTag("concept"),
+            ...collectionApi.getFilteredByTag("method"),
+            ...collectionApi.getFilteredByTag("story"),
+            ...collectionApi.getFilteredByTag("practice"),
+            ...collectionApi.getFilteredByTag("project"),
+            ...collectionApi.getFilteredByTag("playground")
+        ].sort((a, b) => {
+            return getSortableTitle(a.data.title).localeCompare(getSortableTitle(b.data.title));
+        });
+    });
+
     return {
         dir: {
             input: ".",
