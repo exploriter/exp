@@ -41,10 +41,111 @@ permalink: /projects/
     </div>
 </div>
 
-<div class="max-w-4xl">
-    <ol>
-        {%- for post in collections.projectSorted -%}
-            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-        {%- endfor -%}
-    </ol>
+<div class="max-w-5xl">
+
+    <div class="flow-root my-12">
+        <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                <table class="min-w-full divide-y divide-stone-300 border border-stone-300">
+                    <thead>
+                    <tr class="divide-x divide-stone-200 bg-stone-100">
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase">Project</th>
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase">Description</th>
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase"><abbr
+                                    data-tooltip="Date of Birth" class="cursor-help">DOB</abbr></th>
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-stone-200">
+                    <tr class="divide-x divide-stone-200">
+                        <td class="p-4 text-sm font-medium whitespace-nowrap">exp/daily</td>
+                        <td class="p-4 text-sm text-stone-500">???</td>
+                        <td class="p-4 text-sm text-stone-500">2025</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Building...</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200">
+                        <td class="p-4 text-sm font-medium whitespace-nowrap">Walking Games</td>
+                        <td class="p-4 text-sm text-stone-500">???</td>
+                        <td class="p-4 text-sm text-stone-500">2024</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Building...</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200">
+                        <td class="p-4 text-sm font-medium whitespace-nowrap"><a href="/all/"
+                                                                                 class="hover:underline underline decoration-stone-300 hover:decoration-stone-500">exploriter.com</a>
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">You are here.</td>
+                        <td class="p-4 text-sm text-stone-500">2024</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Live</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200">
+                        <td class="p-4 text-sm font-medium"><a
+                                    class="hover:underline underline decoration-stone-300 hover:decoration-stone-500"
+                                    href="/project/superfood-book/"><em>Superfood Juices,
+                                    Smoothies &
+                                    Drinks</em> Book</a></td>
+                        <td class="p-4 text-sm text-stone-500">A recipe book following the success of <em>The Healthy
+                                Green Drink Diet</em> book.
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">2014</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Published</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200 bg-red-100/50 opacity-70">
+                        <td class="p-4 text-sm font-medium whitespace-nowrap"><a
+                                    class="hover:underline underline decoration-stone-300 hover:decoration-stone-500"
+                                    href="/project/superdrinks/">superdrinks.org</a>
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">Superfood drinks recipe blog. Subsumed
+                            healthygreendrink.com.
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">2014</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Shut down in 2017</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200">
+                        <td class="p-4 text-sm font-medium"><a
+                                    class="hover:underline underline decoration-stone-300 hover:decoration-stone-500"
+                                    href="/project/hgd-book/"><em>The
+                                    Healthy Green Drink Diet</em> Book</a></td>
+                        <td class="p-4 text-sm text-stone-500">A recipe book owing to the success of
+                            healthygreendrink.com.
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">2012</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Published</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200 bg-red-100/50 opacity-70">
+                        <td class="p-4 text-sm font-medium whitespace-nowrap"><a
+                                    class="hover:underline underline decoration-stone-300 hover:decoration-stone-500"
+                                    href="/project/designpx/">Designpx</a>
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">A WordPress design and development studio. Specializing
+                            in custom Genesis and Thesis framework themes.
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">2010</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Shut down in 2016</td>
+                    </tr>
+                    <tr class="divide-x divide-stone-200 bg-red-100/50 opacity-70">
+                        <td class="p-4 text-sm font-medium whitespace-nowrap"><a
+                                    class="hover:underline underline decoration-stone-300 hover:decoration-stone-500"
+                                    href="/project/hgd/">healthygreendrink.com</a>
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">A green smoothie recipes blog. Originally built to learn
+                            SEO.
+                        </td>
+                        <td class="p-4 text-sm text-stone-500">2008</td>
+                        <td class="p-4 text-sm text-stone-500 whitespace-nowrap">Shut down in 2016</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr class="divide-x divide-stone-200 bg-stone-100">
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase">Project</th>
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase">Description</th>
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase"><abbr
+                                    data-tooltip="Date of Birth" data-tippy-placement="bottom"
+                                    class="cursor-help">DOB</abbr></th>
+                        <th scope="col" class="px-4 py-3.5 text-left text-sm font-semibold uppercase">Status</th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
