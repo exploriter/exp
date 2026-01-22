@@ -22,6 +22,7 @@ export default async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"_includes/css/output.css": "style.css"});
     eleventyConfig.addPassthroughCopy({"_includes/js/bundle.js": "bundle.js"});
     eleventyConfig.addPassthroughCopy({"_includes/fonts": "fonts"});
+    eleventyConfig.addPassthroughCopy("site.webmanifest");
     eleventyConfig.addWatchTarget("_includes/css/output.css");
     eleventyConfig.addWatchTarget("_includes/js/bundle.js");
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
