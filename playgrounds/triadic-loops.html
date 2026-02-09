@@ -1,26 +1,15 @@
 ---
 title: Triadic Loops
 tags: playground
-description: Triadic loops are closed, living cycles in which meaning is oriented, disclosed, articulated, and returned to lived experience.
+description: Triadic loops are an exploration of how the immanent, omniscient, and transcendent are encountered by the subjective.
 ---
-
-<div class="max-w-3xl">
-    <p>An exploration of how the immanent, omniscient, and transcendent are encountered by the subjective using the <a
-            href="/concept/idm-axioms/"
-            data-tooltip="Statements of the relations between the immanent, omniscient, and transcendent modalities from The Immanent Metaphysics.">axioms
-        of The Immanent Metaphysics</a>.</p>
-    <ul>
-        <li>The <strong>Immanent</strong> <em>informs</em> the <strong>Omniscient</strong>.</li>
-        <li>The <strong>Omniscient</strong> <em>serves</em> the <strong>Transcendent</strong>.</li>
-        <li>The <strong>Transcendent</strong> <em>orients to</em> the <strong>Immanent</strong>.</li>
-    </ul>
-
-    <div class="border border-dashed border-stone-400 relative my-12 inline-block px-10 pb-6 pt-7">
-        <h2 class="inline-block bg-stone-50 p-2 absolute -top-5 left-2 font-semibold text-sm uppercase tracking-wider">
+<div class="max-w-4xl">
+    <div class="border border-dashed border-stone-400 relative mb-12 md:mb-4 md:ml-4 md:inline-block px-4 pb-4 pt-5 md:float-right md:w-80 text-xs">
+        <h2 class="inline-block bg-stone-50 p-2 absolute -top-4.25 left-2 font-semibold uppercase tracking-wider">
             Notation</h2>
-        <p><em>Class</em> has the connotation of context (a general whole), and <em>instance</em> has the connotation of
-            content (a specific part).</p>
-        <ul class="ml-4 mb-0 mt-5 list-inside">
+        <ul class="m-0 list-none">
+            <li class="pb-0"><em>Class</em><sup>c</sup> ≈ context (a general whole).</li>
+            <li class="mb-3"><em>Instance</em><sup>i</sup> ≈ content (a specific part).</li>
             <li>I<sup>c</sup> = <em>class of the immanent</em></li>
             <li>I<sup>i</sup> = <em>instance of the immanent</em></li>
             <li>O<sup>c</sup> = <em>class of the omniscient</em></li>
@@ -29,107 +18,166 @@ description: Triadic loops are closed, living cycles in which meaning is oriente
             <li>T<sup>i</sup> = <em>instance of the transcendent</em></li>
         </ul>
     </div>
-    <h2 class="font-bold text-xl mt-6 mb-12 inline-block border-b border-b-stone-400">Foundational Triadic Loop
-        Examples</h2>
-    <h3 class="text-lg font-semibold"><span class="bg-blue-300/40 py-0.5 px-1 font-bold">Loop 1:</span> Beauty, Truth,
-        and Goodness</h3>
-    <ul>
-        <li><strong>Beauty</strong> ↔ <em>Immanent</em></li>
-        <li><strong>Truth</strong> ↔ <em>Omniscient</em></li>
-        <li><strong>Goodness</strong> ↔ <em>Transcendent</em></li>
+    <p>Based on the <a href="/concept/idm-axioms/">axioms of <em>An Immanent Metaphysics</em></a>.</p>
+    <ul class="mb-8 text-stone-500">
+        <li>The <strong>Immanent</strong> <em>informs</em> the <strong>Omniscient</strong>.</li>
+        <li>The <strong>Omniscient</strong> <em>serves</em> the <strong>Transcendent</strong>.</li>
+        <li>The <strong>Transcendent</strong> <em>orients to</em> the <strong>Immanent</strong>.</li>
     </ul>
 
-    <p>We'll start with <em>beauty</em> since it is the most fundamental (immanent) and loop back to it. Here is what
-        the full loop looks like:</p>
-    <ul>
-        <li><span class="opacity-40">...Goodness →</span> <span
-                class="font-bold"><span class="bg-yellow-300/40 py-0.5 px-1">Beauty</span> → Truth → Goodness</span>
-            <span class="opacity-40">→ Beauty...</span>
-        </li>
-    </ul>
-    <p>And here is the same loop but adding in classes and instances:</p>
+    <p><em>...an instance of the immanent (which implies a class of the immanent), precedes an instance of the
+        omniscient (which implies a class of the omniscient), precedes an instance of the transcendent (which implies a
+        class of the transcendent), precedes...</em></p>
+
+    <!-- Triad Selector -->
+    <div class="mt-12 mb-8 bg-stone-100/50 -mx-4 px-4 py-5 rounded-lg">
+        <label for="triad-search" class="block text-sm font-bold text-stone-600 mb-2">Search Triads</label>
+        <input
+                type="text"
+                id="triad-search"
+                placeholder="Search..."
+                class="w-full px-3 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent"
+        >
+        <div class="mt-2 border border-stone-300 rounded-md overflow-hidden max-h-58 overflow-y-auto">
+            <table class="w-full text-sm">
+                <thead class="bg-stone-100 sticky top-0">
+                <tr>
+                    <th class="px-3 py-2 text-left font-medium text-stone-600">Immanent</th>
+                    <th class="px-3 py-2 text-left font-medium text-stone-600">Omniscient</th>
+                    <th class="px-3 py-2 text-left font-medium text-stone-600">Transcendent</th>
+                </tr>
+                </thead>
+                <tbody id="triad-tbody">
+                <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Loop Display -->
+    <div class="border border-yellow-300 bg-yellow-50/40 relative my-12 px-6 pb-6 pt-8 rounded-lg shadow-sm">
+        <h2 class="inline-block bg-yellow-50 border border-yellow-300 px-3 py-1 absolute -top-4 left-4 font-semibold text-sm uppercase tracking-wider text-yellow-800 rounded">
+            The Triadic Loop
+        </h2>
+        <ul class="mb-0 md:text-lg mt-0 list-inside ml-1">
+            <li><strong data-term="i">Beauty</strong> <em>informs</em> <strong data-term="o">Truth</strong>
+                (I<sup>i</sup> ⇒ I<sup>c</sup> → O<sup>i</sup> ⇒ O<sup>c</sup>)
+            </li>
+            <li><strong data-term="o">Truth</strong> <em>serves</em> <strong data-term="t">Goodness</strong>
+                (O<sup>i</sup> ⇒ O<sup>c</sup> → T<sup>i</sup> ⇒ T<sup>c</sup>)
+            </li>
+            <li><strong data-term="t">Goodness</strong> <em>orients to</em> <strong data-term="i">Beauty</strong>
+                (T<sup>i</sup> ⇒ T<sup>c</sup> → I<sup>i</sup> ⇒ I<sup>c</sup>)
+            </li>
+        </ul>
+    </div>
+    <p><em>...an instance of <span data-term="i" class="lowercase">Beauty</span> (which implies a class of <span
+            data-term="i" class="lowercase">Beauty</span>), precedes an instance of <span data-term="o"
+                                                                                          class="lowercase">Truth</span>
+        (which implies a class of <span data-term="o" class="lowercase">Truth</span>), precedes an instance of <span
+                data-term="t" class="lowercase">Goodness</span> (which implies a class of <span data-term="t"
+                                                                                                class="lowercase">Goodness</span>),
+        precedes...</em></p>
+
+    <a id="triad-link" href="#"
+       class="hidden mt-12 px-4 py-2.5 bg-yellow-100 border border-yellow-300 rounded md:text-lg font-medium text-yellow-800 hover:bg-yellow-200 transition-colors">The
+        Triadic Loop Explained →</a>
 </div>
-<div class="max-w-5xl">
-    <ul>
-        <li><span class="opacity-40">...Goodness<sup>c</sup> →</span> <span class="font-bold"><span
-                class="bg-yellow-300/40 py-0.5 px-1">Beauty<sup>i</sup> ⇒ Beauty<sup>c</sup></span> → Truth<sup>i</sup> ⇒ Truth<sup>c</sup> → Goodness<sup>i</sup> ⇒ Goodness<sup>c</sup></span>
-            <span class="opacity-40">→ Beauty<sup>i</sup>...</span>
-        </li>
-    </ul>
-</div>
-<div class="max-w-3xl">
-    <p>And here is the same loop again but now fully abstracted using our notation:</p>
-    <ul>
-        <li><span class="opacity-40">...T<sup>c</sup> →</span> <span class="font-bold"><span
-                class="bg-yellow-300/40 py-0.5 px-1">I<sup>i</sup> ⇒ I<sup>c</sup></span> → O<sup>i</sup> ⇒ O<sup>c</sup> → T<sup>i</sup> ⇒ T<sup>c</sup></span>
-            <span class="opacity-40">→ I<sup>i</sup>...</span>
-        </li>
-    </ul>
-    <p>In English, this is just saying:</p>
-    <p><em>...a class of goodness precedes an instance of beauty (which implies a
-        class of beauty), which precedes an instance of truth (which implies a class of truth), which precedes an
-        instance of goodness (which implies a class of goodness), which precedes and instance of beauty...</em></p>
-    <p>Or, more verbose, but less abstract:</p>
-    <p><em>...the general concept of goodness comes before a specific beautiful thing (which brings along with it
-        the general concept of beauty), which comes before a specific true thing (which brings along with it the
-        general concept of truth), which comes before a specific good thing (which brings along with it the
-        general concept of goodness), which comes before a specific beautiful thing...</em></p>
-    <p>Now let's actually proceed through the loop:</p>
-    <h4 class="font-bold mt-6 mb-3">Step 0: Beauty as Immanent (I<sup>i</sup>)</h4>
-    <p>Since <a href="/concept/beauty/">beauty is the perception of coherence</a>, we start with its immediate encounter
-        and disclosure. It is not yet explained. A moment, a face, an act, a landscape, a painting, a
-        sentence...whatever it is, it just lands with <em>rightness</em>.</p>
-    <p>But wait! We know that this instance of beauty (immanent) must be preceded by a class of goodness
-        (transcendent) as we might already be wondering, <em>what makes this encounter recognizable as beauty at
-            all?</em></p>
-    <h4 class="font-bold mt-6 mb-3">Step 1a: From Goodness to Beauty (T<sup>c</sup> → I<sup>i</sup>)</h4>
-    <p>Since <a href="/concept/goodness/">goodness is what beauty (and therefore coherence) feels like from the
-        inside</a>, we can now properly start the loop with beauty since we now know how we were able to recognize it as
-        such in the first place. Goodness, as the transcendent horizon of the possibility/recognizability of <em>rightness</em>,
-        is why this particular instance of coherence shows up as beautiful.</p>
-    <h4 class="font-bold mt-6 mb-3">Step 1b: The Immanent Class that Beauty Implies (I<sup>i</sup> ⇒ I<sup>c</sup>)</h4>
-    <p>Encountering a specific instance of beauty implies there is a generalizable <em>kind</em> of thing here. The
-        <em>general recognizability of wholeness in perception</em>. In other words, beauty as a class.</p>
-    <h4 class="font-bold mt-6 mb-3">Step 2a: From Beauty to Truth (I<sup>c</sup> → O<sup>i</sup>)</h4>
-    <p>Since <a href="/concept/truth/">truth is what beauty (and therefore coherence) looks like from the outside</a>,
-        we can begin to articulate coherence to capture some aspect of it. Maybe we percieve a painting as harmonious
-        (instance of beauty), which implies harmony as a class, and then we can produce propositions like, "...it is
-        harmonious because the proportions of such and such are balanced...," etc.</p>
-    <p>Notice that this truth is always selective and partial. Focussing on parts makes it immensely powerful, but that
-        power is ultimately destructive if it loses connection to wholeness. And its only connection to the whole is
-        when it is in service to goodness.</p>
-    <h4 class="font-bold mt-6 mb-3">Step 2b: The Omniscient Class that Truth Implies (O<sup>i</sup> ⇒ O<sup>c</sup>)
-    </h4>
-    <p>Encountering a specific instance of truth, again implies there is a generalizable <em>kind</em> of thing here.
-        Intelligibility-as-such. "Truth in principle," form, logic, lawfulness, the propositional space. In other words,
-        truth as a class.</p>
-    <h4 class="font-bold mt-6 mb-3">Step 3a: From Truth to Goodness (O<sup>c</sup> → T<sup>i</sup>)</h4>
-    <p>What "ought" to be arises when a particular situation becomes intelligible in a way that discloses choice. It is
-        the space where reason becomes real and there is a concrete call to do (or not do). You cannot be obligated by
-        that which you literally cannot make sense of in some way.</p>
-    <h4 class="font-bold mt-6 mb-3">Step 3b: The Transcendent Class that Goodness Implies (T<sup>i</sup> ⇒ T<sup>c</sup>)
-    </h4>
-    <p>Encountering a specific instance of goodness, once again implies there is a generalizable <em>kind</em> of thing
-        here. The transcendent horizon of the possibility/recognizability of <em>rightness</em>, obligation, worthiness.
-        In other words, goodness as a class.</p>
-    <h4 class="font-bold mt-6 mb-3">Step 4/1a: From Goodness Back to Beauty (T<sup>c</sup> → I<sup>i</sup>)</h4>
-    <p>The horizon of worthiness now tunes our attention, shapes what is salient, and trains our perceptions so that the
-        immanent world shows up as a field of coherence that we can participate in and with. Beauty is perceived as
-        beauty, and the loop continues into eternity.</p>
-    <p>And so, going back to the beginning, we can say:</p>
-    <ul>
-        <li><strong>Beauty</strong> <em>informs</em> <strong>Truth</strong>.</li>
-        <li><strong>Truth</strong> <em>serves</em> <strong>Goodness</strong>.</li>
-        <li><strong>Goodness</strong> <em>orients to</em> <strong>Beauty</strong>.</li>
-    </ul>
-</div>
-<div class="max-w-3xl">
-    <h3 class="text-lg font-semibold mt-12"><span class="bg-blue-300/40 py-0.5 px-1 font-bold">Loop 2:</span> Story,
-        Narrative,
-        and Vision</h3>
-    <ul>
-        <li><strong>Story</strong> ↔ <em>Immanent</em></li>
-        <li><strong>Narrative</strong> ↔ <em>Omniscient</em></li>
-        <li><strong>Vision</strong> ↔ <em>Transcendent</em></li>
-    </ul>
-</div>
+
+<script>
+    (function () {
+        const triads = [
+            {i: "Beauty", o: "Truth", t: "Goodness", url: "/story/transcendentals/"},
+            {i: "Story", o: "Narrative", t: "Vision", url: ""},
+            {i: "Meaning", o: "Purpose", t: "Value", url: ""},
+            {i: "Present", o: "Past", t: "Future", url: ""},
+            {i: "Doing", o: "Being", t: "Becoming", url: ""},
+            {i: "Knowing", o: "Known", t: "Knower", url: ""},
+            {i: "Unknown", o: "Known", t: "Unknowable", url: ""},
+            {i: "Change", o: "Causality", t: "Choice", url: ""},
+            {i: "Religion", o: "Science", t: "Mysticism", url: ""},
+            {i: "Spirituality", o: "Technology", t: "Magic", url: ""},
+            {i: "Interdependence", o: "Independence", t: "Dependence", url: ""},
+            {i: "Perception", o: "Attention", t: "Consciousness", url: ""},
+            {i: "Potentiality", o: "Possibility", t: "Probability", url: ""},
+            {i: "Force", o: "Power", t: "Energy (Strength)", url: ""},
+            {i: "Positivity", o: "Equality", t: "Inequality", url: ""},
+            {i: "Boundary", o: "External", t: "Internal", url: ""},
+            {i: "Relation", o: "Domain", t: "Identity", url: ""},
+            {i: "Relation", o: "World (Reality)", t: "Self", url: ""},
+            {i: "Mesoscopic", o: "Macroscopic", t: "Microscopic", url: ""},
+            {i: "Observation", o: "Observed", t: "Observer", url: ""},
+            {i: "Effectiveness", o: "Generality", t: "Originality", url: ""},
+            {i: "Perception", o: "Perceived", t: "Perceiver", url: ""},
+            {i: "Selection", o: "Consequence", t: "Possibility", url: ""},
+            {i: "Description", o: "Explanation", t: "Prediction", url: ""},
+            {i: "Directive", o: "Assertion (Answer)", t: "Question", url: ""},
+            {i: "Act", o: "React", t: "Respond", url: ""},
+            {i: "Communication", o: "Information", t: "Significance", url: ""},
+            {i: "Inclusion", o: "Proximity", t: "Similarity", url: ""},
+            {i: "Linear Time", o: "Cyclic Time", t: "Simultaneous Time", url: "/test"},
+            {i: "Language", o: "Literal", t: "Symbolic", url: ""},
+            {i: "Monism", o: "Dualism", t: "Trialism", url: ""},
+            {i: "Consciousness", o: "Knowing", t: "Understanding", url: ""},
+            {i: "Who and What", o: "When and Where", t: "Why and How", url: ""}
+        ];
+
+        let selectedIndex = 0;
+
+        const searchInput = document.getElementById('triad-search');
+        const tbody = document.getElementById('triad-tbody');
+
+        function renderTriads(filter = '') {
+            const lowerFilter = filter.toLowerCase();
+            tbody.innerHTML = '';
+
+            triads.forEach((triad, index) => {
+                const matches = filter === '' ||
+                    triad.i.toLowerCase().includes(lowerFilter) ||
+                    triad.o.toLowerCase().includes(lowerFilter) ||
+                    triad.t.toLowerCase().includes(lowerFilter);
+
+                if (!matches) return;
+
+                const row = document.createElement('tr');
+                row.className = `cursor-pointer hover:bg-yellow-50 ${index === selectedIndex ? 'bg-yellow-100' : ''}`;
+                row.innerHTML = `
+                <td class="px-3 py-2 border-t border-stone-200">${triad.i}</td>
+                <td class="px-3 py-2 border-t border-stone-200">${triad.o}</td>
+                <td class="px-3 py-2 border-t border-stone-200">${triad.t}</td>
+            `;
+                row.addEventListener('click', () => selectTriad(index));
+                tbody.appendChild(row);
+            });
+        }
+
+        const triadLink = document.getElementById('triad-link');
+
+        function selectTriad(index) {
+            selectedIndex = index;
+            const triad = triads[index];
+
+            document.querySelectorAll('[data-term="i"]').forEach(el => el.textContent = triad.i);
+            document.querySelectorAll('[data-term="o"]').forEach(el => el.textContent = triad.o);
+            document.querySelectorAll('[data-term="t"]').forEach(el => el.textContent = triad.t);
+
+            if (triad.url) {
+                triadLink.href = triad.url;
+                triadLink.classList.remove('hidden');
+                triadLink.classList.add('inline-block');
+            } else {
+                triadLink.classList.add('hidden');
+                triadLink.classList.remove('inline-block');
+            }
+
+            renderTriads(searchInput.value);
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            renderTriads(e.target.value);
+        });
+
+        renderTriads();
+        selectTriad(0);
+    })();
+</script>
