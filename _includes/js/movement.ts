@@ -127,6 +127,30 @@ function getSchedulerCache(targetDate: Date): SchedulerCache {
    return schedulerCache;
 }
 
+function formatOrdinalDay(day: number): string {
+   const remainder = day % 100;
+   if (remainder >= 11 && remainder <= 13) {
+      return `${day}th`;
+   }
+
+   switch (day % 10) {
+      case 1:
+         return `${day}st`;
+      case 2:
+         return `${day}nd`;
+      case 3:
+         return `${day}rd`;
+      default:
+         return `${day}th`;
+   }
+}
+
+function formatCycleStart(isoDate: string): string {
+   const date = parseIsoDate(isoDate);
+   const month = new Intl.DateTimeFormat("en-US", {month: "long"}).format(date);
+   return `${month} ${formatOrdinalDay(date.getDate())}`;
+}
+
 function renderExercise(item: SelectedExercise, section: SectionKey): string {
    const styles = SECTION_STYLES[section];
    const frequencyNote = section === "micro" && item.exercise.rules.max_sessions_per_day > 1
@@ -180,9 +204,10 @@ function renderPlan(root: HTMLElement, plan: DailyPlan, offset: number): void {
        : `Viewing ${offset > 0 ? `${offset} day${offset === 1 ? "" : "s"} ahead` : `${Math.abs(offset)} day${Math.abs(offset) === 1 ? "" : "s"} back`} from today's schedule.`;
    offsetElement.textContent = offset === 0 ? "Today" : `${offset > 0 ? "+" : ""}${offset} day${Math.abs(offset) === 1 ? "" : "s"}`;
    cycleDayElement.textContent = `Day ${plan.cycle.dayNumber}`;
+   const cycleStart = formatCycleStart(plan.cycle.startIsoDate);
    coverageElement.textContent = plan.cycle.completed
-       ? `All ${plan.cycle.totalCount} exercises shown since ${plan.cycle.startIsoDate}.`
-       : `${plan.cycle.uniqueCount}/${plan.cycle.totalCount} exercises since ${plan.cycle.startIsoDate}.`;
+       ? `All ${plan.cycle.totalCount} exercises shown since ${cycleStart}.`
+       : `${plan.cycle.uniqueCount}/${plan.cycle.totalCount} exercises since ${cycleStart}.`;
    const remainingNames = new Set(plan.cycle.missingExercises);
    cycleListElement.innerHTML = exerciseFile.exercises
        .map((exercise) => {
