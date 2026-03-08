@@ -1,0 +1,796 @@
+{
+  "go_live_date": "2026-03-08",
+  "coverage_window_days": 14,
+  "session_load_cap": 13,
+  "category_profiles": {
+    "Flow": {
+      "movement_zone": "neutral",
+      "slot_affinity": {
+        "flow": 5,
+        "accessory": 1,
+        "micro": 1
+      },
+      "movement_patterns": [
+        "mobility",
+        "coordination"
+      ],
+      "stress_tags": [
+        "cardio_light"
+      ],
+      "support_tags": [
+        "coordination",
+        "joint_prep"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Push": {
+      "movement_zone": "upper",
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "push"
+      ],
+      "stress_tags": [
+        "shoulders",
+        "triceps"
+      ],
+      "support_tags": [
+        "pressing_strength"
+      ],
+      "intensity_tier": "medium",
+      "load_score": 3
+    },
+    "Pull": {
+      "movement_zone": "upper",
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "pull"
+      ],
+      "stress_tags": [
+        "upper_back",
+        "biceps",
+        "grip"
+      ],
+      "support_tags": [
+        "posture",
+        "scapular_control"
+      ],
+      "intensity_tier": "medium",
+      "load_score": 3
+    },
+    "Legs": {
+      "movement_zone": "lower",
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "lower_body"
+      ],
+      "stress_tags": [
+        "quads",
+        "glutes"
+      ],
+      "support_tags": [
+        "lower_body_strength"
+      ],
+      "intensity_tier": "medium",
+      "load_score": 3
+    },
+    "Posterior Chain": {
+      "movement_zone": "lower",
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "posterior_chain"
+      ],
+      "stress_tags": [
+        "hamstrings",
+        "glutes",
+        "low_back"
+      ],
+      "support_tags": [
+        "posterior_chain_strength"
+      ],
+      "intensity_tier": "medium",
+      "load_score": 3
+    },
+    "Structural": {
+      "movement_zone": "neutral",
+      "slot_affinity": {
+        "flow": 1,
+        "accessory": 5,
+        "micro": 1
+      },
+      "movement_patterns": [
+        "structural"
+      ],
+      "stress_tags": [
+        "stability"
+      ],
+      "support_tags": [
+        "joint_support",
+        "posture"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Conditioning": {
+      "movement_zone": "neutral",
+      "slot_affinity": {
+        "conditioning": 5,
+        "micro": 1
+      },
+      "movement_patterns": [
+        "conditioning"
+      ],
+      "stress_tags": [
+        "cardio"
+      ],
+      "support_tags": [
+        "work_capacity"
+      ],
+      "intensity_tier": "medium",
+      "load_score": 2
+    }
+  },
+  "exercise_overrides": {
+    "Rope Flow": {
+      "movement_patterns": [
+        "rotation",
+        "shoulder_prep",
+        "rhythm"
+      ],
+      "support_tags": [
+        "shoulder_health",
+        "coordination"
+      ]
+    },
+    "Stability Ball": {
+      "slot_affinity": {
+        "micro": 3
+      },
+      "movement_patterns": [
+        "balance",
+        "core",
+        "spinal_control"
+      ],
+      "support_tags": [
+        "core_bracing",
+        "balance"
+      ]
+    },
+    "KB Halo": {
+      "movement_patterns": [
+        "rotation",
+        "shoulder_stability",
+        "thoracic_mobility"
+      ],
+      "support_tags": [
+        "shoulder_health",
+        "thoracic_mobility"
+      ]
+    },
+    "RMT Club": {
+      "movement_patterns": [
+        "rotation",
+        "conditioning",
+        "coordination"
+      ],
+      "stress_tags": [
+        "shoulders",
+        "grip",
+        "cardio"
+      ],
+      "support_tags": [
+        "rotational_power"
+      ]
+    },
+    "Stick Flow": {
+      "movement_patterns": [
+        "rotation",
+        "coordination",
+        "thoracic_mobility"
+      ],
+      "support_tags": [
+        "joint_prep",
+        "coordination"
+      ]
+    },
+    "Pushups": {
+      "slot_affinity": {
+        "main": 5,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "horizontal_push"
+      ],
+      "stress_tags": [
+        "chest",
+        "shoulders",
+        "triceps"
+      ],
+      "pair_well_with": [
+        "Face Pulls",
+        "DB Reverse Flys",
+        "KB Halo"
+      ]
+    },
+    "Dips": {
+      "slot_affinity": {
+        "main": 5,
+        "accessory": 1
+      },
+      "movement_patterns": [
+        "vertical_push"
+      ],
+      "stress_tags": [
+        "chest",
+        "shoulders",
+        "triceps"
+      ],
+      "pair_well_with": [
+        "Face Pulls",
+        "Hanging (max hold)"
+      ],
+      "avoid_with": [
+        "DB Overhead Press"
+      ]
+    },
+    "Triceps Extensions": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "elbow_extension"
+      ],
+      "stress_tags": [
+        "triceps",
+        "elbows"
+      ],
+      "support_tags": [
+        "pressing_support"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "DB Overhead Press": {
+      "slot_affinity": {
+        "main": 5,
+        "accessory": 1
+      },
+      "movement_patterns": [
+        "vertical_push"
+      ],
+      "stress_tags": [
+        "shoulders",
+        "triceps",
+        "core"
+      ],
+      "pair_well_with": [
+        "Lat Pulldowns",
+        "Face Pulls",
+        "KB Halo"
+      ],
+      "avoid_with": [
+        "Dips"
+      ]
+    },
+    "Delt Raises (front/side/rear)": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "shoulder_isolation"
+      ],
+      "stress_tags": [
+        "shoulders"
+      ],
+      "support_tags": [
+        "shoulder_support"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Seated Cable Rows": {
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 3
+      },
+      "movement_patterns": [
+        "horizontal_pull"
+      ],
+      "stress_tags": [
+        "upper_back",
+        "biceps",
+        "grip"
+      ],
+      "pair_well_with": [
+        "Pushups",
+        "DB Overhead Press"
+      ]
+    },
+    "Lat Pulldowns": {
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "vertical_pull"
+      ],
+      "stress_tags": [
+        "lats",
+        "biceps",
+        "grip"
+      ],
+      "support_tags": [
+        "overhead_balance"
+      ]
+    },
+    "Face Pulls": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 5
+      },
+      "movement_patterns": [
+        "rear_delt",
+        "external_rotation"
+      ],
+      "stress_tags": [
+        "rear_delts"
+      ],
+      "support_tags": [
+        "shoulder_health",
+        "scapular_stability"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "DB Curls": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "elbow_flexion"
+      ],
+      "stress_tags": [
+        "biceps",
+        "forearms"
+      ],
+      "support_tags": [
+        "pulling_support"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "DB Reverse Flys": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "rear_delt",
+        "scapular_retraction"
+      ],
+      "stress_tags": [
+        "rear_delts",
+        "upper_back"
+      ],
+      "support_tags": [
+        "posture",
+        "shoulder_health"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Forearm Wrist Roller": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "grip",
+        "forearm"
+      ],
+      "stress_tags": [
+        "grip",
+        "forearms"
+      ],
+      "support_tags": [
+        "grip_strength"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "BW Squats AMRAP": {
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 2
+      },
+      "movement_patterns": [
+        "squat"
+      ],
+      "stress_tags": [
+        "quads",
+        "glutes",
+        "cardio"
+      ],
+      "support_tags": [
+        "knee_capacity"
+      ],
+      "load_score": 2
+    },
+    "Pistol Squats": {
+      "slot_affinity": {
+        "main": 5,
+        "accessory": 1
+      },
+      "movement_patterns": [
+        "single_leg_squat",
+        "balance"
+      ],
+      "stress_tags": [
+        "quads",
+        "glutes",
+        "core"
+      ],
+      "support_tags": [
+        "unilateral_strength"
+      ]
+    },
+    "BOSU Squats": {
+      "slot_affinity": {
+        "main": 3,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "squat",
+        "balance"
+      ],
+      "support_tags": [
+        "foot_stability",
+        "knee_stability"
+      ],
+      "load_score": 2
+    },
+    "Walking Lunges": {
+      "slot_affinity": {
+        "main": 4,
+        "accessory": 3
+      },
+      "movement_patterns": [
+        "lunge",
+        "locomotion"
+      ],
+      "stress_tags": [
+        "quads",
+        "glutes",
+        "cardio"
+      ],
+      "support_tags": [
+        "unilateral_strength"
+      ]
+    },
+    "Leg Extension Machine": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "knee_extension"
+      ],
+      "stress_tags": [
+        "quads"
+      ],
+      "support_tags": [
+        "quad_support"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Monkeyfeet Lifts": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "hip_flexion"
+      ],
+      "stress_tags": [
+        "hip_flexors"
+      ],
+      "support_tags": [
+        "gait_support"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Dealift (any variation)": {
+      "slot_affinity": {
+        "main": 6,
+        "accessory": 0
+      },
+      "movement_patterns": [
+        "hinge"
+      ],
+      "stress_tags": [
+        "hamstrings",
+        "glutes",
+        "low_back",
+        "grip"
+      ],
+      "support_tags": [
+        "posterior_chain_strength"
+      ],
+      "intensity_tier": "high",
+      "load_score": 4,
+      "pair_well_with": [
+        "Ab Roller",
+        "Hanging (max hold)",
+        "KB Halo"
+      ],
+      "avoid_with": [
+        "KB Swings",
+        "Heavy Bag"
+      ]
+    },
+    "KB Swings": {
+      "slot_affinity": {
+        "main": 4,
+        "conditioning": 2
+      },
+      "movement_patterns": [
+        "hinge",
+        "power"
+      ],
+      "stress_tags": [
+        "hamstrings",
+        "glutes",
+        "grip",
+        "cardio"
+      ],
+      "support_tags": [
+        "hip_power"
+      ],
+      "load_score": 3,
+      "avoid_with": [
+        "Dealift (any variation)"
+      ]
+    },
+    "Leg Curl Machine": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "knee_flexion"
+      ],
+      "stress_tags": [
+        "hamstrings"
+      ],
+      "support_tags": [
+        "posterior_support"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Ab Roller": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 5
+      },
+      "movement_patterns": [
+        "anti_extension",
+        "core"
+      ],
+      "stress_tags": [
+        "core",
+        "shoulders"
+      ],
+      "support_tags": [
+        "core_bracing"
+      ],
+      "load_score": 2
+    },
+    "Horse Stance (max hold)": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "isometric_squat",
+        "stance"
+      ],
+      "stress_tags": [
+        "quads",
+        "adductors"
+      ],
+      "support_tags": [
+        "stance_endurance"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Hanging (max hold)": {
+      "slot_affinity": {
+        "accessory": 4,
+        "micro": 4
+      },
+      "movement_patterns": [
+        "decompression",
+        "grip",
+        "shoulder_stability"
+      ],
+      "stress_tags": [
+        "grip",
+        "shoulders"
+      ],
+      "support_tags": [
+        "decompression",
+        "grip_strength",
+        "shoulder_health"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Hanging Leg Raises": {
+      "slot_affinity": {
+        "main": 1,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "hip_flexion",
+        "core"
+      ],
+      "stress_tags": [
+        "core",
+        "hip_flexors",
+        "grip"
+      ],
+      "support_tags": [
+        "anterior_core"
+      ],
+      "load_score": 2
+    },
+    "Inversions": {
+      "slot_affinity": {
+        "flow": 2,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "inversion",
+        "shoulder_stability",
+        "balance"
+      ],
+      "stress_tags": [
+        "shoulders",
+        "core"
+      ],
+      "support_tags": [
+        "vestibular_adaptation",
+        "shoulder_health"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Iron Neck": {
+      "slot_affinity": {
+        "main": 0,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "neck"
+      ],
+      "stress_tags": [
+        "neck"
+      ],
+      "support_tags": [
+        "neck_strength"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Tibialis Raises": {
+      "slot_affinity": {
+        "main": 0,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "ankle_dorsiflexion"
+      ],
+      "stress_tags": [
+        "shins"
+      ],
+      "support_tags": [
+        "ankle_strength",
+        "footwork"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Calf Raises": {
+      "slot_affinity": {
+        "main": 0,
+        "accessory": 4
+      },
+      "movement_patterns": [
+        "plantar_flexion"
+      ],
+      "stress_tags": [
+        "calves"
+      ],
+      "support_tags": [
+        "ankle_strength",
+        "lower_leg_balance"
+      ],
+      "intensity_tier": "low",
+      "load_score": 1
+    },
+    "Heavy Bag": {
+      "movement_patterns": [
+        "striking",
+        "conditioning",
+        "rotation"
+      ],
+      "stress_tags": [
+        "shoulders",
+        "core",
+        "cardio"
+      ],
+      "support_tags": [
+        "rotational_power"
+      ],
+      "load_score": 2
+    },
+    "Jump Rope": {
+      "slot_affinity": {
+        "flow": 1,
+        "conditioning": 5
+      },
+      "movement_patterns": [
+        "footwork",
+        "conditioning",
+        "coordination"
+      ],
+      "stress_tags": [
+        "calves",
+        "cardio"
+      ],
+      "support_tags": [
+        "footwork",
+        "rhythm"
+      ],
+      "load_score": 2
+    },
+    "Walking": {
+      "slot_affinity": {
+        "conditioning": 1,
+        "micro": 6
+      },
+      "movement_patterns": [
+        "locomotion",
+        "recovery"
+      ],
+      "stress_tags": [
+        "cardio_light"
+      ],
+      "support_tags": [
+        "recovery",
+        "circulation"
+      ],
+      "intensity_tier": "low",
+      "load_score": 0
+    }
+  }
+}

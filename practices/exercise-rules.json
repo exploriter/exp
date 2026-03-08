@@ -1,0 +1,373 @@
+{
+   "categories": [
+      "Flow",
+      "Push",
+      "Pull",
+      "Legs",
+      "Posterior Chain",
+      "Structural",
+      "Conditioning"
+   ],
+   "exercises": [
+      {
+         "name": "Rope Flow",
+         "category": "Flow",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 2,
+            "max_sessions_per_day": 2,
+            "target_sessions_per_week": 5
+         }
+      },
+      {
+         "name": "Stability Ball",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 2,
+            "target_sessions_per_week": 4
+         }
+      },
+      {
+         "name": "KB Halo",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "RMT Club",
+         "category": "Conditioning",
+         "rules": {
+            "min_rest_days_between_sessions": 3,
+            "max_rest_days_between_sessions": 5,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Stick Flow",
+         "category": "Flow",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 2,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Pushups",
+         "category": "Push",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Dips",
+         "category": "Push",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Triceps Extensions",
+         "category": "Push",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "DB Overhead Press",
+         "category": "Push",
+         "rules": {
+            "min_rest_days_between_sessions": 3,
+            "max_rest_days_between_sessions": 5,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Delt Raises (front/side/rear)",
+         "category": "Push",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Seated Cable Rows",
+         "category": "Pull",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Lat Pulldowns",
+         "category": "Pull",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Face Pulls",
+         "category": "Pull",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "DB Curls",
+         "category": "Pull",
+         "rules": {
+            "min_rest_days_between_sessions": 1,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 4
+         }
+      },
+      {
+         "name": "DB Reverse Flys",
+         "category": "Pull",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Forearm Wrist Roller",
+         "category": "Pull",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "BW Squats AMRAP",
+         "category": "Legs",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 2,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 5
+         }
+      },
+      {
+         "name": "Pistol Squats",
+         "category": "Legs",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "BOSU Squats",
+         "category": "Legs",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 2,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 4
+         }
+      },
+      {
+         "name": "Walking Lunges",
+         "category": "Legs",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Leg Extension Machine",
+         "category": "Legs",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 5,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Monkeyfeet Lifts",
+         "category": "Legs",
+         "rules": {
+            "min_rest_days_between_sessions": 3,
+            "max_rest_days_between_sessions": 6,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Deadlift (any variation)",
+         "category": "Posterior Chain",
+         "rules": {
+            "min_rest_days_between_sessions": 6,
+            "max_rest_days_between_sessions": 7,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "KB Swings",
+         "category": "Posterior Chain",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Leg Curl Machine",
+         "category": "Posterior Chain",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 5,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Ab Roller",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 4,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Horse Stance (max hold)",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 1,
+            "max_rest_days_between_sessions": 2,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 4
+         }
+      },
+      {
+         "name": "Hanging (max hold)",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 2,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Hanging Leg Raises",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 2,
+            "max_rest_days_between_sessions": 5,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Inversions",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 2,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 4
+         }
+      },
+      {
+         "name": "Iron Neck",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 1,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 2
+         }
+      },
+      {
+         "name": "Tibialis Raises",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 1,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Calf Raises",
+         "category": "Structural",
+         "rules": {
+            "min_rest_days_between_sessions": 1,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Heavy Bag",
+         "category": "Conditioning",
+         "rules": {
+            "min_rest_days_between_sessions": 1,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Jump Rope",
+         "category": "Conditioning",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 3,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 3
+         }
+      },
+      {
+         "name": "Walking",
+         "category": "Conditioning",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 0,
+            "max_sessions_per_day": 3,
+            "target_sessions_per_week": 7
+         }
+      }
+   ]
+}

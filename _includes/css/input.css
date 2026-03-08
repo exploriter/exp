@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@source "./_includes/**/*.html";
-@source "./**/*.{html,md}";
+@source "./_includes/**/*.{html,js,ts}";
+@source "./**/*.{html,md,js,ts}";
 
 @theme {
     --font-averia: 'Averia Serif Libre', serif;

@@ -1,0 +1,87 @@
+---
+title: Movement Practice
+tags: practice
+description: A daily movement practice.
+---
+
+<div class="max-w-5xl" data-movement-practice>
+   <div class="border border-dashed border-stone-300 bg-stone-100 p-5 md:p-6 rounded-md">
+      <div class="max-w-3xl">
+         <h1 class="mb-3 font-jersey text-4xl uppercase tracking-wide text-stone-950 md:text-5xl">Daily Movement
+            Practice</h1>
+         <p class="text-base text-stone-700 md:text-lg">
+            A daily movement practice that cycles through an exercise library while trying
+            to respect cadence, complementarity, and recovery.
+         </p>
+      </div>
+
+      <div class="mt-6 border border-stone-300/60 bg-stone-50 p-5 rounded-md">
+         <div class="flex flex-col justify-between gap-4">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+               <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-stone-500 mb-2">Viewing</p>
+                  <p class="text-2xl font-extrabold text-stone-950" data-movement-date>Loading schedule...</p>
+               </div>
+
+               <div class="flex items-center gap-1.5 sm:justify-end">
+                  <button type="button"
+                          class="rounded-sm border border-stone-300 bg-stone-50 px-3 py-1.5 text-xs uppercase tracking-wide text-stone-800 enabled:cursor-pointer hover:bg-stone-200 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-stone-50"
+                          data-movement-prev>
+                     Previous
+                  </button>
+                  <button type="button"
+                          class="rounded-sm cursor-pointer border border-stone-400/80 bg-stone-200/60 px-3 py-1.5 text-xs uppercase tracking-wide text-stone-900 hover:bg-stone-300"
+                          data-movement-today>
+                     Today
+                  </button>
+                  <button type="button"
+                          class="rounded-sm cursor-pointer border border-stone-300 bg-stone-50 px-3 py-1.5 text-xs uppercase tracking-wide text-stone-800 hover:bg-stone-200"
+                          data-movement-next>
+                     Next
+                  </button>
+               </div>
+            </div>
+
+            <div>
+               <div class="flex items-end justify-between gap-3">
+                  <p class="text-sm text-stone-600 mb-0" data-movement-subtitle></p>
+                  <div class="px-2 py-1 text-xs uppercase tracking-wide text-stone-600 bg-stone-200/50 shrink-0 rounded-sm"
+                       data-movement-offset>
+                     Today
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="mt-4 grid gap-4 lg:grid-cols-[0.95fr_1.35fr] lg:items-start">
+      <div class="grid gap-4">
+         <section class="rounded-md border border-dashed border-stone-300 bg-stone-100/70 p-5">
+            <div class="flex items-center justify-between gap-3">
+               <h2 class="font-jersey text-2xl uppercase tracking-wide text-stone-900">Cycle Coverage</h2>
+               <div class="px-2 py-1 text-xs uppercase tracking-wide text-stone-600 bg-stone-200/50 shrink-0 rounded-sm"
+                    data-movement-cycle-day>
+                  Day 1
+               </div>
+            </div>
+            <p class="mt-2 text-sm text-stone-600" data-movement-coverage></p>
+            <div class="mt-6 flex flex-wrap gap-1.5" data-movement-cycle-list></div>
+         </section>
+
+         <section class="rounded-md border border-dashed border-stone-300 bg-stone-100/70 p-5">
+            <h2 class="font-jersey text-2xl uppercase tracking-wide text-stone-900">Cadence Pressure</h2>
+            <p class="mt-2 text-sm text-stone-600">These are currently past their preferred max-rest threshold.</p>
+            <div class="mt-4 flex flex-wrap gap-1.5" data-movement-overdue></div>
+         </section>
+      </div>
+
+      <section class="rounded-md border border-dashed border-stone-300 bg-stone-100/70 p-5 ring-6 ring-stone-500/10">
+         <h2 class="font-jersey text-2xl uppercase tracking-wide text-stone-900">Today&apos;s Practice</h2>
+         <div class="mt-4 grid gap-3" data-movement-sections></div>
+      </section>
+   </div>
+</div>
+
+<!--suppress HtmlUnknownTarget -->
+<script src="/movement-bundle.js"></script>

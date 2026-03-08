@@ -1,2 +1,4 @@
 _site
 _includes/css/output.css
+_includes/js/bundle.js
+_includes/js/movement-bundle.js
