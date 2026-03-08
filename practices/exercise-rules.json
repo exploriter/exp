@@ -60,7 +60,7 @@
          }
       },
       {
-         "name": "Pushups",
+         "name": "Push-ups",
          "category": "Push",
          "rules": {
             "min_rest_days_between_sessions": 2,
@@ -120,7 +120,7 @@
          }
       },
       {
-         "name": "Lat Pulldowns",
+         "name": "Lat Pull-downs",
          "category": "Pull",
          "rules": {
             "min_rest_days_between_sessions": 2,
@@ -150,7 +150,7 @@
          }
       },
       {
-         "name": "DB Reverse Flys",
+         "name": "DB Reverse Fly's",
          "category": "Pull",
          "rules": {
             "min_rest_days_between_sessions": 2,
@@ -367,6 +367,16 @@
             "max_rest_days_between_sessions": 0,
             "max_sessions_per_day": 3,
             "target_sessions_per_week": 7
+         }
+      },
+      {
+         "name": "Sprints",
+         "category": "Conditioning",
+         "rules": {
+            "min_rest_days_between_sessions": 3,
+            "max_rest_days_between_sessions": 6,
+            "max_sessions_per_day": 1,
+            "target_sessions_per_week": 1
          }
       }
    ]

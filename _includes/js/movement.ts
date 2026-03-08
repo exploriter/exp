@@ -101,7 +101,6 @@ interface DailyPlan {
 interface ScheduleState {
    lastSeen: Map<string, number>;
    appearances: Map<string, number[]>;
-   plans: DailyPlan[];
    cycle: {
       cycleNumber: number;
       startDayIndex: number;
@@ -109,8 +108,24 @@ interface ScheduleState {
    };
 }
 
+interface SchedulerCheckpoint {
+   dayIndex: number;
+   state: ScheduleState;
+}
+
+interface SchedulerCache {
+   anchorDate: Date;
+   exercises: Exercise[];
+   plans: Map<number, DailyPlan>;
+   checkpoints: SchedulerCheckpoint[];
+   state: ScheduleState;
+   computedThroughDayIndex: number;
+}
+
 const exerciseFile = rawExercises as ExerciseFile;
 const relationshipFile = rawRelationships as RelationshipFile;
+const CHECKPOINT_INTERVAL_DAYS = 90;
+let schedulerCache: SchedulerCache | null = null;
 
 const SECTION_ORDER: SectionKey[] = ["flow", "main", "accessory", "conditioning", "micro"];
 const SECTION_META: Record<SectionKey, { title: string; description: string; empty: string }> = {
@@ -161,7 +176,7 @@ const SECTION_STYLES: Record<SectionKey, {
       item: "flex items-baseline justify-between gap-3 border-t border-stone-200 py-2 first:border-t-0 first:pt-0 last:pb-0",
       itemName: "font-medium text-stone-950 text-sm",
       frequencyNote: "text-xs text-stone-500",
-      empty: "mt-4 text-sm text-stone-600"
+      empty: "m-4 text-sm text-stone-600"
    },
    main: {
       wrapper: "rounded-md border border-dashed border-stone-300 bg-stone-50",
@@ -172,7 +187,7 @@ const SECTION_STYLES: Record<SectionKey, {
       item: "flex items-baseline justify-between gap-3 border-t border-stone-200 py-2 first:border-t-0 first:pt-0 last:pb-0",
       itemName: "font-medium text-stone-950 text-sm",
       frequencyNote: "text-xs text-stone-500",
-      empty: "mt-4 text-sm text-stone-600"
+      empty: "m-4 text-sm text-stone-600"
    },
    accessory: {
       wrapper: "rounded-md border border-dashed border-stone-300 bg-stone-50",
@@ -183,7 +198,7 @@ const SECTION_STYLES: Record<SectionKey, {
       item: "flex items-baseline justify-between gap-3 border-t border-stone-200 py-2 first:border-t-0 first:pt-0 last:pb-0",
       itemName: "font-medium text-stone-950 text-sm",
       frequencyNote: "text-xs text-stone-500",
-      empty: "mt-4 text-sm text-stone-600"
+      empty: "m-4 text-sm text-stone-600"
    },
    conditioning: {
       wrapper: "rounded-md border border-dashed border-stone-300 bg-stone-50",
@@ -194,7 +209,7 @@ const SECTION_STYLES: Record<SectionKey, {
       item: "flex items-baseline justify-between gap-3 border-t border-stone-200 py-2 first:border-t-0 first:pt-0 last:pb-0",
       itemName: "font-medium text-stone-950 text-sm",
       frequencyNote: "text-xs text-stone-500",
-      empty: "mt-4 text-sm text-stone-600"
+      empty: "m-4 text-sm text-stone-600"
    },
    micro: {
       wrapper: "rounded-md border border-dashed border-stone-300 bg-stone-50",
@@ -205,7 +220,7 @@ const SECTION_STYLES: Record<SectionKey, {
       item: "flex items-baseline justify-between gap-3 border-t border-stone-200 py-2 first:border-t-0 first:pt-0 last:pb-0",
       itemName: "font-medium text-stone-950 text-sm",
       frequencyNote: "text-xs text-stone-500",
-      empty: "mt-4 text-sm text-stone-600"
+      empty: "m-4 text-sm text-stone-600"
    }
 };
 
@@ -380,6 +395,32 @@ function getRecentCount(appearances: number[], dayIndex: number, windowDays: num
 
 function getGapSinceLast(lastSeen: number | null, dayIndex: number): number {
    return lastSeen === null ? dayIndex + 1 : dayIndex - lastSeen;
+}
+
+function createScheduleState(): ScheduleState {
+   return {
+      lastSeen: new Map<string, number>(),
+      appearances: new Map<string, number[]>(),
+      cycle: {
+         cycleNumber: 1,
+         startDayIndex: 0,
+         seenExercises: new Set<string>()
+      }
+   };
+}
+
+function cloneScheduleState(state: ScheduleState): ScheduleState {
+   return {
+      lastSeen: new Map(state.lastSeen),
+      appearances: new Map(
+          [...state.appearances.entries()].map(([exerciseName, appearances]) => [exerciseName, [...appearances]])
+      ),
+      cycle: {
+         cycleNumber: state.cycle.cycleNumber,
+         startDayIndex: state.cycle.startDayIndex,
+         seenExercises: new Set(state.cycle.seenExercises)
+      }
+   };
 }
 
 function isEligible(exercise: Exercise, state: ScheduleState, dayIndex: number): boolean {
@@ -600,17 +641,24 @@ function pickBestExercise(
 ): Exercise | null {
    const selected = SECTION_ORDER.flatMap((slot) => sections[slot]);
    const selectedNames = getSelectedNames(sections);
-   const scored = exercises
-       .filter((exercise) => !selectedNames.has(exercise.name))
-       .filter(predicate)
-       .map((exercise) => ({
-          exercise,
-          score: computeSlotScore(exercise, section, state, selected, dayIndex)
-       }))
-       .filter((entry) => Number.isFinite(entry.score))
-       .sort((left, right) => right.score - left.score);
+   let bestExercise: Exercise | null = null;
+   let bestScore = Number.NEGATIVE_INFINITY;
 
-   return scored[0]?.exercise ?? null;
+   for (const exercise of exercises) {
+      if (selectedNames.has(exercise.name) || !predicate(exercise)) {
+         continue;
+      }
+
+      const score = computeSlotScore(exercise, section, state, selected, dayIndex);
+      if (!Number.isFinite(score) || score <= bestScore) {
+         continue;
+      }
+
+      bestExercise = exercise;
+      bestScore = score;
+   }
+
+   return bestExercise;
 }
 
 function shouldAllowHeavyDay(sections: Record<SectionKey, SelectedExercise[]>): boolean {
@@ -805,55 +853,65 @@ function buildDayPlan(dayIndex: number, date: Date, exercises: Exercise[], state
 }
 
 export function buildSchedule(targetDate: Date): DailyPlan {
-   const anchorDate = parseIsoDate(relationshipFile.go_live_date);
-   const normalizedTargetDate = startOfDay(targetDate);
-   const finalDayIndex = Math.max(0, getDayIndex(anchorDate, normalizedTargetDate));
-   const exercises = buildCatalog();
-   const state: ScheduleState = {
-      lastSeen: new Map<string, number>(),
-      appearances: new Map<string, number[]>(),
-      plans: [],
-      cycle: {
-         cycleNumber: 1,
-         startDayIndex: 0,
-         seenExercises: new Set<string>()
-      }
-   };
+   if (!schedulerCache) {
+      const anchorDate = parseIsoDate(relationshipFile.go_live_date);
+      schedulerCache = {
+         anchorDate,
+         exercises: buildCatalog(),
+         plans: new Map<number, DailyPlan>(),
+         checkpoints: [{dayIndex: -1, state: createScheduleState()}],
+         state: createScheduleState(),
+         computedThroughDayIndex: -1
+      };
+   }
 
-   for (let dayIndex = 0; dayIndex <= finalDayIndex; dayIndex += 1) {
-      const date = addDays(anchorDate, dayIndex);
-      const plan = buildDayPlan(dayIndex, date, exercises, state);
+   const cache = schedulerCache;
+   const normalizedTargetDate = startOfDay(targetDate);
+   const finalDayIndex = Math.max(0, getDayIndex(cache.anchorDate, normalizedTargetDate));
+
+   for (let dayIndex = cache.computedThroughDayIndex + 1; dayIndex <= finalDayIndex; dayIndex += 1) {
+      const date = addDays(cache.anchorDate, dayIndex);
+      const plan = buildDayPlan(dayIndex, date, cache.exercises, cache.state);
 
       for (const section of SECTION_ORDER) {
          for (const item of plan.sections[section]) {
-            state.cycle.seenExercises.add(item.exercise.name);
+            cache.state.cycle.seenExercises.add(item.exercise.name);
          }
       }
 
       plan.cycle = {
-         cycleNumber: state.cycle.cycleNumber,
-         startIsoDate: toIsoDate(addDays(anchorDate, state.cycle.startDayIndex)),
-         dayNumber: dayIndex - state.cycle.startDayIndex + 1,
-         uniqueCount: state.cycle.seenExercises.size,
-         totalCount: exercises.length,
-         missingExercises: exercises
+         cycleNumber: cache.state.cycle.cycleNumber,
+         startIsoDate: toIsoDate(addDays(cache.anchorDate, cache.state.cycle.startDayIndex)),
+         dayNumber: dayIndex - cache.state.cycle.startDayIndex + 1,
+         uniqueCount: cache.state.cycle.seenExercises.size,
+         totalCount: cache.exercises.length,
+         missingExercises: cache.exercises
              .map((exercise) => exercise.name)
-             .filter((exerciseName) => !state.cycle.seenExercises.has(exerciseName)),
-         completed: state.cycle.seenExercises.size === exercises.length
+             .filter((exerciseName) => !cache.state.cycle.seenExercises.has(exerciseName)),
+         completed: cache.state.cycle.seenExercises.size === cache.exercises.length
       };
 
-      state.plans.push(plan);
+      cache.plans.set(dayIndex, plan);
 
       if (plan.cycle.completed) {
-         state.cycle = {
-            cycleNumber: state.cycle.cycleNumber + 1,
+         cache.state.cycle = {
+            cycleNumber: cache.state.cycle.cycleNumber + 1,
             startDayIndex: dayIndex + 1,
             seenExercises: new Set<string>()
          };
       }
+
+      cache.computedThroughDayIndex = dayIndex;
+
+      if ((dayIndex + 1) % CHECKPOINT_INTERVAL_DAYS === 0) {
+         cache.checkpoints.push({
+            dayIndex,
+            state: cloneScheduleState(cache.state)
+         });
+      }
    }
 
-   return state.plans[state.plans.length - 1];
+   return cache.plans.get(finalDayIndex)!;
 }
 
 function renderExercise(item: SelectedExercise, section: SectionKey): string {
