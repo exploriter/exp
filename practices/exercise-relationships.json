@@ -414,7 +414,8 @@
     "BW Squats AMRAP": {
       "slot_affinity": {
         "main": 4,
-        "accessory": 2
+        "accessory": 2,
+        "micro": 1
       },
       "movement_patterns": [
         "squat"
@@ -450,7 +451,8 @@
     "BOSU Squats": {
       "slot_affinity": {
         "main": 3,
-        "accessory": 4
+        "accessory": 4,
+        "micro": 1
       },
       "movement_patterns": [
         "squat",

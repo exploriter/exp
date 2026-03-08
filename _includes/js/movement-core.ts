@@ -165,7 +165,6 @@ const SUPPORT_TARGETS: Record<string, string[]> = {
    posture: ["upper_back", "shoulders", "neck"],
    pressing_strength: ["shoulders", "triceps", "chest"],
    pressing_support: ["triceps", "shoulders", "chest"],
-   pullingsupport: ["biceps", "upper_back", "grip"],
    pulling_support: ["biceps", "upper_back", "grip"],
    quad_support: ["quads"],
    recovery: ["cardio", "cardio_light", "low_back"],
@@ -210,10 +209,6 @@ function buildSlotAffinity(profile: RelationshipProfile, override: RelationshipP
       }
    }
 
-   if (exercise.rules.max_sessions_per_day > 1 || exercise.rules.min_rest_days_between_sessions === 0) {
-      affinity.micro = Math.max(affinity.micro, 1);
-   }
-
    if (exercise.category !== "Flow") {
       affinity.flow = 0;
    }
@@ -223,6 +218,55 @@ function buildSlotAffinity(profile: RelationshipProfile, override: RelationshipP
    }
 
    return affinity;
+}
+
+function validateConfiguration(context: SchedulerContext): void {
+   const declaredCategories = context.exerciseFile.categories;
+   const declaredCategorySet = new Set(declaredCategories);
+   const duplicateCategories = declaredCategories.filter((category, index) => declaredCategories.indexOf(category) !== index);
+
+   if (duplicateCategories.length > 0) {
+      throw new Error(`Duplicate categories in exercise-rules.json: ${[...new Set(duplicateCategories)].join(", ")}`);
+   }
+
+   const exerciseCategories = new Set(context.exerciseFile.exercises.map((exercise) => exercise.category));
+   const missingCategories = [...exerciseCategories].filter((category) => !declaredCategorySet.has(category));
+   if (missingCategories.length > 0) {
+      throw new Error(`Exercises reference undeclared categories: ${missingCategories.join(", ")}`);
+   }
+
+   const missingProfiles = declaredCategories.filter((category) => !(category in context.relationshipFile.category_profiles));
+   if (missingProfiles.length > 0) {
+      throw new Error(`Missing category_profiles for categories: ${missingProfiles.join(", ")}`);
+   }
+
+   const extraProfiles = Object.keys(context.relationshipFile.category_profiles).filter((category) => !declaredCategorySet.has(category));
+   if (extraProfiles.length > 0) {
+      throw new Error(`category_profiles contains unknown categories: ${extraProfiles.join(", ")}`);
+   }
+
+   const exerciseNames = context.exerciseFile.exercises.map((exercise) => exercise.name);
+   const duplicateExercises = exerciseNames.filter((name, index) => exerciseNames.indexOf(name) !== index);
+   if (duplicateExercises.length > 0) {
+      throw new Error(`Duplicate exercise names in exercise-rules.json: ${[...new Set(duplicateExercises)].join(", ")}`);
+   }
+}
+
+function getCompatibleCheckpoints(
+    checkpointFile: CheckpointFile,
+    relationshipFile: RelationshipFile
+): SchedulerCheckpoint[] {
+   if (
+      checkpointFile.go_live_date !== relationshipFile.go_live_date ||
+      checkpointFile.checkpoint_interval_days !== CHECKPOINT_INTERVAL_DAYS
+   ) {
+      return [];
+   }
+
+   return checkpointFile.checkpoints.map((checkpoint) => ({
+      dayIndex: checkpoint.day_index,
+      state: deserializeScheduleState(checkpoint.state)
+   }));
 }
 
 function buildCatalog(context: SchedulerContext): Exercise[] {
@@ -859,11 +903,9 @@ export function createSchedulerCache(
     checkpointFile: CheckpointFile,
     targetDate: Date
 ): SchedulerCache {
+   validateConfiguration({exerciseFile, relationshipFile});
    const anchorDate = parseIsoDate(relationshipFile.go_live_date);
-   const precomputedCheckpoints = checkpointFile.checkpoints.map((checkpoint) => ({
-      dayIndex: checkpoint.day_index,
-      state: deserializeScheduleState(checkpoint.state)
-   }));
+   const precomputedCheckpoints = getCompatibleCheckpoints(checkpointFile, relationshipFile);
    const targetDayIndex = Math.max(0, getDayIndex(anchorDate, startOfDay(targetDate)));
    const baseCheckpoint = findLatestCheckpointBefore(precomputedCheckpoints, targetDayIndex);
 
@@ -919,6 +961,7 @@ export function createCheckpointFile(
     horizonDays: number,
     generatedAt = new Date().toISOString()
 ): CheckpointFile {
+   validateConfiguration({exerciseFile, relationshipFile});
    const anchorDate = parseIsoDate(relationshipFile.go_live_date);
    const cache: SchedulerCache = {
       anchorDate,

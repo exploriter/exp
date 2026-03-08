@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-08T23:11:54.462Z",
+  "generated_at": "2026-03-08T23:23:35.351Z",
   "go_live_date": "2026-03-08",
   "checkpoint_interval_days": 90,
   "horizon_days": 1095,
@@ -9,103 +9,107 @@
       "iso_date": "2026-06-05",
       "state": {
         "last_seen": {
-          "Shake, Tap & Twist Flow": 88,
-          "DB Overhead Press": 86,
+          "Shake, Tap & Twist Flow": 89,
+          "DB Overhead Press": 85,
           "BW Squats AMRAP": 89,
-          "Push-ups": 88,
-          "Stability Ball": 89,
-          "KB Halo": 85,
+          "Push-ups": 87,
+          "Stability Ball": 88,
+          "KB Halo": 88,
           "Heavy Bag": 87,
           "Walking": 89,
-          "Hanging (max hold)": 87,
-          "Rope Flow": 89,
-          "Dips": 87,
-          "KB Swings": 86,
-          "Inversions": 89,
-          "DB Curls": 87,
-          "Jump Rope": 88,
+          "Hanging (max hold)": 89,
+          "Rope Flow": 88,
+          "Dips": 86,
+          "KB Swings": 88,
+          "Inversions": 86,
+          "DB Curls": 89,
+          "Jump Rope": 89,
           "Stick Flow": 86,
-          "DB Reverse Fly's": 89,
+          "DB Reverse Fly's": 87,
           "BOSU Squats": 87,
-          "Horse Stance (max hold)": 88,
-          "Tibialis Raises": 87,
-          "RMT Club": 89,
-          "Lat Pull-downs": 89,
-          "Face Pulls": 86,
-          "Calf Raises": 88,
+          "Horse Stance (max hold)": 87,
+          "Tibialis Raises": 84,
+          "RMT Club": 82,
+          "Lat Pull-downs": 88,
+          "Face Pulls": 89,
+          "Calf Raises": 83,
           "Sprints": 86,
-          "Seated Cable Rows": 88,
-          "Pistol Squats": 88,
-          "Ab Roller": 89,
+          "Seated Cable Rows": 89,
+          "Pistol Squats": 89,
+          "Ab Roller": 88,
           "Forearm Wrist Roller": 86,
-          "Delt Raises (front/side/rear)": 88,
-          "Walking Lunges": 85,
-          "Iron Neck": 84,
+          "Delt Raises (front/side/rear)": 87,
+          "Walking Lunges": 86,
+          "Iron Neck": 86,
           "Triceps Extensions": 85,
           "Hanging Leg Raises": 85,
-          "Leg Curl Machine": 86,
-          "Leg Extension Machine": 83,
+          "Leg Curl Machine": 88,
+          "Leg Extension Machine": 85,
           "Deadlift (any variation)": 85,
-          "Monkeyfeet Lifts": 82
+          "Monkeyfeet Lifts": 84
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
-            69,
-            72,
+            70,
+            71,
+            73,
             75,
             77,
             79,
-            80,
+            81,
             83,
             85,
-            88
+            87,
+            89
           ],
           "DB Overhead Press": [
-            70,
-            74,
+            71,
+            76,
             80,
-            86
+            85
           ],
           "BW Squats AMRAP": [
             69,
             71,
             74,
-            75,
-            78,
+            77,
             79,
+            80,
             82,
-            84,
-            87,
+            85,
+            88,
             89
           ],
           "Push-ups": [
-            72,
-            75,
-            80,
-            83,
-            88
+            70,
+            73,
+            78,
+            81,
+            87
           ],
           "Stability Ball": [
             71,
-            73,
+            72,
             74,
-            76,
+            75,
+            79,
             80,
-            82,
             83,
+            84,
             85,
-            89
+            88
           ],
           "KB Halo": [
-            72,
-            78,
-            85
+            70,
+            76,
+            82,
+            88
           ],
           "Heavy Bag": [
-            70,
-            73,
-            76,
-            80,
+            71,
+            75,
+            77,
+            81,
             83,
             87
           ],
@@ -133,120 +137,116 @@
             89
           ],
           "Hanging (max hold)": [
-            71,
-            73,
-            76,
-            79,
-            81,
-            84,
-            87
-          ],
-          "Rope Flow": [
-            71,
+            70,
             73,
             76,
             78,
-            80,
             81,
-            83,
-            84,
-            87,
-            89
-          ],
-          "Dips": [
-            73,
-            78,
-            82,
-            87
-          ],
-          "KB Swings": [
-            71,
-            76,
-            81,
-            86
-          ],
-          "Inversions": [
-            69,
-            72,
-            75,
-            78,
             83,
             86,
             89
           ],
-          "DB Curls": [
-            72,
-            77,
-            81,
-            87
-          ],
-          "Jump Rope": [
+          "Rope Flow": [
+            69,
             71,
-            75,
+            73,
+            74,
+            76,
             77,
-            81,
+            80,
+            82,
             84,
+            87,
             88
           ],
-          "Stick Flow": [
+          "Dips": [
+            73,
+            78,
+            81,
+            86
+          ],
+          "KB Swings": [
+            72,
+            78,
+            83,
+            88
+          ],
+          "Inversions": [
+            70,
+            75,
+            80,
+            86
+          ],
+          "DB Curls": [
+            71,
+            77,
+            83,
+            89
+          ],
+          "Jump Rope": [
             70,
             74,
+            76,
+            80,
+            84,
+            89
+          ],
+          "Stick Flow": [
+            72,
+            76,
             78,
             82,
             86
           ],
           "DB Reverse Fly's": [
-            69,
-            73,
-            77,
-            81,
-            85,
-            89
+            71,
+            75,
+            79,
+            83,
+            87
           ],
           "BOSU Squats": [
-            70,
-            73,
-            77,
-            79,
+            69,
+            72,
+            75,
+            78,
+            81,
             83,
             87
           ],
           "Horse Stance (max hold)": [
-            70,
-            74,
-            78,
-            83,
-            88
+            72,
+            77,
+            82,
+            87
           ],
           "Tibialis Raises": [
-            70,
-            75,
-            80,
-            87
+            72,
+            78,
+            84
           ],
           "RMT Club": [
             69,
-            74,
+            73,
             78,
-            82,
-            89
+            82
           ],
           "Lat Pull-downs": [
             72,
-            79,
-            84,
-            89
+            77,
+            82,
+            88
           ],
           "Face Pulls": [
-            74,
-            79,
-            86
+            71,
+            77,
+            83,
+            89
           ],
           "Calf Raises": [
             69,
-            75,
-            81,
-            88
+            76,
+            83
           ],
           "Sprints": [
             72,
@@ -254,111 +254,108 @@
             86
           ],
           "Seated Cable Rows": [
-            71,
-            76,
-            81,
-            88
-          ],
-          "Pistol Squats": [
-            72,
-            78,
-            83,
-            88
-          ],
-          "Ab Roller": [
-            71,
-            77,
+            69,
+            74,
+            79,
             84,
             89
           ],
-          "Forearm Wrist Roller": [
+          "Pistol Squats": [
             73,
             79,
+            84,
+            89
+          ],
+          "Ab Roller": [
+            74,
+            81,
+            88
+          ],
+          "Forearm Wrist Roller": [
+            73,
+            80,
             86
           ],
           "Delt Raises (front/side/rear)": [
-            70,
-            76,
-            82,
-            88
+            74,
+            81,
+            87
           ],
           "Walking Lunges": [
             70,
             75,
             80,
-            85
+            86
           ],
           "Iron Neck": [
-            76,
-            84
+            70,
+            78,
+            86
           ],
           "Triceps Extensions": [
             76,
             85
           ],
           "Hanging Leg Raises": [
-            74,
+            75,
             85
           ],
           "Leg Curl Machine": [
             69,
-            77,
-            86
+            79,
+            88
           ],
           "Leg Extension Machine": [
-            73,
-            83
+            74,
+            85
           ],
           "Deadlift (any variation)": [
-            77,
+            76,
             85
           ],
           "Monkeyfeet Lifts": [
-            71,
-            82
+            73,
+            84
           ]
         },
         "cycle": {
           "cycle_number": 9,
-          "start_day_index": 83,
+          "start_day_index": 85,
           "seen_exercises": [
             "Shake, Tap & Twist Flow",
-            "Push-ups",
-            "Pistol Squats",
-            "BOSU Squats",
-            "Horse Stance (max hold)",
+            "DB Overhead Press",
+            "BW Squats AMRAP",
+            "Deadlift (any variation)",
             "Leg Extension Machine",
-            "Inversions",
-            "Heavy Bag",
+            "Triceps Extensions",
+            "Hanging Leg Raises",
             "Walking",
             "Stability Ball",
-            "Rope Flow",
-            "Lat Pull-downs",
-            "BW Squats AMRAP",
-            "Iron Neck",
-            "Ab Roller",
-            "Jump Rope",
-            "Hanging (max hold)",
-            "DB Reverse Fly's",
-            "Deadlift (any variation)",
-            "Walking Lunges",
-            "Hanging Leg Raises",
-            "KB Halo",
-            "Triceps Extensions",
             "Stick Flow",
-            "DB Overhead Press",
-            "KB Swings",
-            "Face Pulls",
-            "Forearm Wrist Roller",
-            "Leg Curl Machine",
-            "Sprints",
             "Dips",
-            "Tibialis Raises",
-            "DB Curls",
-            "Seated Cable Rows",
-            "Calf Raises",
+            "Walking Lunges",
+            "Inversions",
+            "Iron Neck",
+            "Forearm Wrist Roller",
+            "Sprints",
+            "Hanging (max hold)",
+            "Rope Flow",
+            "Push-ups",
+            "BOSU Squats",
+            "DB Reverse Fly's",
+            "Horse Stance (max hold)",
             "Delt Raises (front/side/rear)",
-            "RMT Club"
+            "Heavy Bag",
+            "Lat Pull-downs",
+            "KB Swings",
+            "Ab Roller",
+            "KB Halo",
+            "Leg Curl Machine",
+            "Seated Cable Rows",
+            "Pistol Squats",
+            "DB Curls",
+            "Face Pulls",
+            "Jump Rope"
           ]
         }
       }
@@ -369,105 +366,106 @@
       "state": {
         "last_seen": {
           "Shake, Tap & Twist Flow": 179,
-          "DB Overhead Press": 178,
+          "DB Overhead Press": 175,
           "BW Squats AMRAP": 178,
-          "Push-ups": 177,
-          "Stability Ball": 177,
+          "Push-ups": 178,
+          "Stability Ball": 178,
           "KB Halo": 177,
-          "Heavy Bag": 178,
+          "Heavy Bag": 177,
           "Walking": 179,
-          "Hanging (max hold)": 179,
-          "Rope Flow": 177,
-          "Dips": 179,
+          "Hanging (max hold)": 177,
+          "Rope Flow": 178,
+          "Dips": 176,
           "KB Swings": 176,
-          "Inversions": 178,
-          "DB Curls": 175,
+          "Inversions": 176,
+          "DB Curls": 176,
           "Jump Rope": 179,
-          "Stick Flow": 178,
-          "DB Reverse Fly's": 174,
+          "Stick Flow": 179,
+          "DB Reverse Fly's": 176,
           "BOSU Squats": 177,
-          "Horse Stance (max hold)": 176,
-          "Tibialis Raises": 174,
-          "RMT Club": 177,
-          "Lat Pull-downs": 175,
+          "Horse Stance (max hold)": 178,
+          "Tibialis Raises": 175,
+          "RMT Club": 178,
+          "Lat Pull-downs": 177,
           "Face Pulls": 179,
-          "Calf Raises": 175,
+          "Calf Raises": 177,
           "Sprints": 175,
-          "Seated Cable Rows": 176,
+          "Seated Cable Rows": 179,
           "Pistol Squats": 179,
-          "Ab Roller": 178,
-          "Forearm Wrist Roller": 174,
-          "Delt Raises (front/side/rear)": 177,
-          "Walking Lunges": 176,
-          "Iron Neck": 179,
-          "Triceps Extensions": 178,
+          "Ab Roller": 179,
+          "Forearm Wrist Roller": 177,
+          "Delt Raises (front/side/rear)": 179,
+          "Walking Lunges": 175,
+          "Iron Neck": 174,
+          "Triceps Extensions": 172,
           "Hanging Leg Raises": 173,
-          "Leg Curl Machine": 179,
-          "Leg Extension Machine": 174,
+          "Leg Curl Machine": 178,
+          "Leg Extension Machine": 175,
           "Deadlift (any variation)": 173,
-          "Monkeyfeet Lifts": 177
+          "Monkeyfeet Lifts": 170
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
+            159,
             160,
-            163,
-            165,
+            161,
+            164,
             167,
-            169,
+            168,
+            171,
             172,
-            173,
+            175,
             176,
             179
           ],
           "DB Overhead Press": [
-            161,
-            167,
-            172,
-            178
+            160,
+            165,
+            169,
+            175
           ],
           "BW Squats AMRAP": [
-            159,
-            162,
+            160,
+            161,
             164,
-            167,
+            166,
             169,
             172,
-            175,
+            174,
             177,
             178
           ],
           "Push-ups": [
-            161,
-            166,
-            169,
-            174,
-            177
+            163,
+            168,
+            173,
+            178
           ],
           "Stability Ball": [
             159,
-            160,
+            162,
             163,
-            167,
+            166,
             168,
             170,
             172,
+            174,
             176,
-            177
+            178
           ],
           "KB Halo": [
-            161,
+            159,
             166,
             171,
             177
           ],
           "Heavy Bag": [
-            160,
-            164,
-            168,
+            159,
+            163,
+            166,
             170,
             172,
-            176,
-            178
+            177
           ],
           "Walking": [
             159,
@@ -495,28 +493,29 @@
           "Hanging (max hold)": [
             161,
             164,
-            166,
-            170,
-            173,
-            176,
-            179
-          ],
-          "Rope Flow": [
-            159,
-            161,
-            164,
             167,
-            168,
+            169,
             171,
-            172,
             175,
             177
           ],
-          "Dips": [
+          "Rope Flow": [
+            160,
             163,
+            165,
             168,
-            173,
-            179
+            169,
+            170,
+            172,
+            174,
+            177,
+            178
+          ],
+          "Dips": [
+            162,
+            167,
+            170,
+            176
           ],
           "KB Swings": [
             161,
@@ -525,95 +524,95 @@
             176
           ],
           "Inversions": [
-            162,
-            165,
-            168,
+            159,
+            163,
+            167,
             171,
-            175,
-            178
+            176
           ],
           "DB Curls": [
             162,
             167,
             171,
-            175
+            176
           ],
           "Jump Rope": [
             161,
             165,
             169,
             171,
-            175,
+            176,
             179
           ],
           "Stick Flow": [
             162,
             166,
             170,
-            174,
-            178
+            173,
+            175,
+            179
           ],
           "DB Reverse Fly's": [
-            162,
-            166,
-            170,
-            174
+            159,
+            163,
+            167,
+            171,
+            176
           ],
           "BOSU Squats": [
-            160,
-            164,
+            159,
+            162,
+            165,
             167,
             170,
-            174,
+            173,
             177
           ],
           "Horse Stance (max hold)": [
-            159,
-            164,
-            168,
-            172,
-            176
-          ],
-          "Tibialis Raises": [
-            159,
+            160,
             165,
             169,
-            174
+            173,
+            178
+          ],
+          "Tibialis Raises": [
+            164,
+            169,
+            175
           ],
           "RMT Club": [
             162,
-            169,
-            173,
-            177
-          ],
-          "Lat Pull-downs": [
-            159,
-            164,
-            169,
-            175
-          ],
-          "Face Pulls": [
-            164,
             168,
             173,
+            178
+          ],
+          "Lat Pull-downs": [
+            161,
+            166,
+            172,
+            177
+          ],
+          "Face Pulls": [
+            163,
+            168,
+            174,
             179
           ],
           "Calf Raises": [
-            160,
-            166,
+            164,
             170,
-            175
+            177
           ],
           "Sprints": [
-            159,
+            160,
             167,
             175
           ],
           "Seated Cable Rows": [
-            160,
-            165,
-            171,
-            176
+            164,
+            169,
+            174,
+            179
           ],
           "Pistol Squats": [
             163,
@@ -622,80 +621,100 @@
             179
           ],
           "Ab Roller": [
-            160,
-            166,
-            172,
-            178
-          ],
-          "Forearm Wrist Roller": [
             162,
             168,
-            174
+            174,
+            179
           ],
-          "Delt Raises (front/side/rear)": [
-            159,
+          "Forearm Wrist Roller": [
             165,
             170,
             177
+          ],
+          "Delt Raises (front/side/rear)": [
+            160,
+            166,
+            172,
+            179
           ],
           "Walking Lunges": [
             160,
             165,
             170,
-            176
+            175
           ],
           "Iron Neck": [
-            165,
-            171,
-            179
+            161,
+            167,
+            174
           ],
           "Triceps Extensions": [
-            163,
-            170,
-            178
+            165,
+            172
           ],
           "Hanging Leg Raises": [
-            163,
+            164,
             173
           ],
           "Leg Curl Machine": [
-            161,
-            169,
-            179
+            159,
+            168,
+            178
           ],
           "Leg Extension Machine": [
-            164,
-            174
+            166,
+            175
           ],
           "Deadlift (any variation)": [
-            163,
+            164,
             173
           ],
           "Monkeyfeet Lifts": [
-            167,
-            177
+            161,
+            170
           ]
         },
         "cycle": {
-          "cycle_number": 18,
-          "start_day_index": 178,
+          "cycle_number": 17,
+          "start_day_index": 171,
           "seen_exercises": [
-            "Stick Flow",
-            "DB Overhead Press",
-            "BW Squats AMRAP",
-            "Triceps Extensions",
-            "Ab Roller",
-            "Heavy Bag",
-            "Walking",
-            "Inversions",
             "Shake, Tap & Twist Flow",
-            "Dips",
-            "Pistol Squats",
-            "Iron Neck",
-            "Face Pulls",
-            "Leg Curl Machine",
+            "DB Reverse Fly's",
+            "KB Swings",
+            "Inversions",
+            "KB Halo",
+            "DB Curls",
             "Jump Rope",
-            "Hanging (max hold)"
+            "Walking",
+            "Hanging (max hold)",
+            "Lat Pull-downs",
+            "BW Squats AMRAP",
+            "Delt Raises (front/side/rear)",
+            "Triceps Extensions",
+            "Heavy Bag",
+            "Stability Ball",
+            "Rope Flow",
+            "Stick Flow",
+            "Push-ups",
+            "Deadlift (any variation)",
+            "Horse Stance (max hold)",
+            "Hanging Leg Raises",
+            "RMT Club",
+            "BOSU Squats",
+            "Seated Cable Rows",
+            "Pistol Squats",
+            "Face Pulls",
+            "Ab Roller",
+            "Iron Neck",
+            "DB Overhead Press",
+            "Walking Lunges",
+            "Tibialis Raises",
+            "Leg Extension Machine",
+            "Sprints",
+            "Dips",
+            "Calf Raises",
+            "Forearm Wrist Roller",
+            "Leg Curl Machine"
           ]
         }
       }
@@ -708,98 +727,103 @@
           "Shake, Tap & Twist Flow": 268,
           "DB Overhead Press": 265,
           "BW Squats AMRAP": 269,
-          "Push-ups": 266,
-          "Stability Ball": 267,
-          "KB Halo": 264,
-          "Heavy Bag": 268,
+          "Push-ups": 269,
+          "Stability Ball": 268,
+          "KB Halo": 266,
+          "Heavy Bag": 267,
           "Walking": 269,
-          "Hanging (max hold)": 269,
+          "Hanging (max hold)": 267,
           "Rope Flow": 269,
-          "Dips": 269,
-          "KB Swings": 264,
-          "Inversions": 267,
+          "Dips": 267,
+          "KB Swings": 265,
+          "Inversions": 268,
           "DB Curls": 267,
           "Jump Rope": 269,
-          "Stick Flow": 266,
-          "DB Reverse Fly's": 267,
-          "BOSU Squats": 268,
-          "Horse Stance (max hold)": 268,
-          "Tibialis Raises": 266,
-          "RMT Club": 266,
-          "Lat Pull-downs": 268,
-          "Face Pulls": 265,
-          "Calf Raises": 267,
-          "Sprints": 263,
-          "Seated Cable Rows": 263,
-          "Pistol Squats": 268,
-          "Ab Roller": 269,
-          "Forearm Wrist Roller": 269,
-          "Delt Raises (front/side/rear)": 269,
-          "Walking Lunges": 267,
+          "Stick Flow": 269,
+          "DB Reverse Fly's": 268,
+          "BOSU Squats": 267,
+          "Horse Stance (max hold)": 265,
+          "Tibialis Raises": 269,
+          "RMT Club": 268,
+          "Lat Pull-downs": 264,
+          "Face Pulls": 269,
+          "Calf Raises": 264,
+          "Sprints": 266,
+          "Seated Cable Rows": 266,
+          "Pistol Squats": 267,
+          "Ab Roller": 266,
+          "Forearm Wrist Roller": 265,
+          "Delt Raises (front/side/rear)": 263,
+          "Walking Lunges": 264,
           "Iron Neck": 268,
-          "Triceps Extensions": 266,
-          "Hanging Leg Raises": 268,
-          "Leg Curl Machine": 263,
-          "Leg Extension Machine": 265,
-          "Deadlift (any variation)": 264,
-          "Monkeyfeet Lifts": 262
+          "Triceps Extensions": 267,
+          "Hanging Leg Raises": 264,
+          "Leg Curl Machine": 259,
+          "Leg Extension Machine": 269,
+          "Deadlift (any variation)": 268,
+          "Monkeyfeet Lifts": 268
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
-            251,
-            253,
-            256,
+            249,
+            252,
+            254,
+            255,
+            257,
             259,
-            260,
-            263,
-            265,
+            262,
+            264,
+            266,
             268
           ],
           "DB Overhead Press": [
-            253,
-            259,
+            249,
+            255,
+            260,
             265
           ],
           "BW Squats AMRAP": [
             249,
             252,
-            255,
-            258,
+            254,
+            256,
+            259,
             260,
-            262,
+            263,
             266,
             269
           ],
           "Push-ups": [
-            251,
-            256,
-            260,
-            266
+            254,
+            259,
+            264,
+            269
           ],
           "Stability Ball": [
             249,
-            252,
+            251,
+            253,
+            256,
+            257,
+            260,
+            262,
+            264,
+            266,
+            268
+          ],
+          "KB Halo": [
+            249,
+            255,
+            261,
+            266
+          ],
+          "Heavy Bag": [
+            251,
             253,
             255,
             259,
             262,
-            263,
-            265,
             267
-          ],
-          "KB Halo": [
-            253,
-            258,
-            264
-          ],
-          "Heavy Bag": [
-            249,
-            251,
-            253,
-            257,
-            261,
-            265,
-            268
           ],
           "Walking": [
             249,
@@ -826,228 +850,196 @@
           ],
           "Hanging (max hold)": [
             250,
-            252,
-            254,
-            258,
-            261,
-            264,
-            266,
-            269
-          ],
-          "Rope Flow": [
-            249,
-            252,
+            253,
             255,
-            257,
             259,
             261,
-            264,
+            263,
+            267
+          ],
+          "Rope Flow": [
+            250,
+            253,
+            254,
+            256,
+            258,
+            260,
+            263,
+            265,
             267,
             269
           ],
           "Dips": [
-            254,
-            259,
-            264,
-            269
-          ],
-          "KB Swings": [
-            254,
-            259,
-            264
-          ],
-          "Inversions": [
-            251,
-            254,
+            252,
             257,
-            260,
-            264,
+            262,
             267
           ],
-          "DB Curls": [
+          "KB Swings": [
+            250,
+            255,
+            260,
+            265
+          ],
+          "Inversions": [
             253,
-            257,
-            261,
+            258,
+            263,
+            268
+          ],
+          "DB Curls": [
+            251,
+            256,
+            262,
             267
           ],
           "Jump Rope": [
             252,
             256,
-            260,
-            264,
-            267,
+            261,
+            265,
             269
           ],
           "Stick Flow": [
-            250,
+            251,
             254,
             258,
-            262,
-            266
+            261,
+            265,
+            269
           ],
           "DB Reverse Fly's": [
-            249,
-            255,
-            258,
-            262,
-            267
-          ],
-          "BOSU Squats": [
-            250,
             253,
-            257,
-            260,
-            265,
-            268
-          ],
-          "Horse Stance (max hold)": [
-            251,
-            255,
-            259,
+            258,
             263,
             268
           ],
-          "Tibialis Raises": [
-            251,
+          "BOSU Squats": [
+            252,
+            255,
+            258,
+            261,
+            264,
+            267
+          ],
+          "Horse Stance (max hold)": [
+            252,
             256,
-            260,
-            266
+            261,
+            265
+          ],
+          "Tibialis Raises": [
+            253,
+            258,
+            263,
+            269
           ],
           "RMT Club": [
             250,
-            255,
-            262,
-            266
+            254,
+            258,
+            263,
+            268
           ],
           "Lat Pull-downs": [
             250,
             256,
-            261,
-            268
+            264
           ],
           "Face Pulls": [
-            254,
-            260,
-            265
-          ],
-          "Calf Raises": [
             250,
-            256,
-            261,
-            267
-          ],
-          "Sprints": [
-            254,
-            263
-          ],
-          "Seated Cable Rows": [
-            252,
-            257,
-            263
-          ],
-          "Pistol Squats": [
-            253,
-            258,
-            263,
-            268
-          ],
-          "Ab Roller": [
-            249,
             256,
             262,
             269
           ],
-          "Forearm Wrist Roller": [
-            252,
-            257,
-            263,
-            269
-          ],
-          "Delt Raises (front/side/rear)": [
-            253,
+          "Calf Raises": [
+            254,
             259,
-            264,
-            269
+            264
           ],
-          "Walking Lunges": [
+          "Sprints": [
+            249,
+            257,
+            266
+          ],
+          "Seated Cable Rows": [
             251,
             256,
             261,
+            266
+          ],
+          "Pistol Squats": [
+            252,
+            257,
+            262,
             267
           ],
-          "Iron Neck": [
+          "Ab Roller": [
             254,
+            260,
+            266
+          ],
+          "Forearm Wrist Roller": [
+            254,
+            260,
+            265
+          ],
+          "Delt Raises (front/side/rear)": [
+            252,
+            257,
+            263
+          ],
+          "Walking Lunges": [
+            253,
+            258,
+            264
+          ],
+          "Iron Neck": [
+            253,
             260,
             268
           ],
           "Triceps Extensions": [
-            250,
-            258,
-            266
+            251,
+            259,
+            267
           ],
           "Hanging Leg Raises": [
-            249,
-            258,
-            268
-          ],
-          "Leg Curl Machine": [
-            254,
-            263
-          ],
-          "Leg Extension Machine": [
-            255,
-            265
-          ],
-          "Deadlift (any variation)": [
             255,
             264
           ],
+          "Leg Curl Machine": [
+            250,
+            259
+          ],
+          "Leg Extension Machine": [
+            249,
+            258,
+            269
+          ],
+          "Deadlift (any variation)": [
+            251,
+            259,
+            268
+          ],
           "Monkeyfeet Lifts": [
-            252,
-            262
+            257,
+            268
           ]
         },
         "cycle": {
           "cycle_number": 26,
-          "start_day_index": 263,
+          "start_day_index": 269,
           "seen_exercises": [
-            "Shake, Tap & Twist Flow",
-            "Seated Cable Rows",
-            "Pistol Squats",
-            "Leg Curl Machine",
-            "Forearm Wrist Roller",
-            "Horse Stance (max hold)",
-            "Sprints",
-            "Walking",
-            "Stability Ball",
-            "Rope Flow",
-            "Dips",
-            "Deadlift (any variation)",
-            "KB Swings",
-            "KB Halo",
-            "Delt Raises (front/side/rear)",
-            "Jump Rope",
-            "Inversions",
-            "Hanging (max hold)",
-            "DB Overhead Press",
-            "BOSU Squats",
-            "Leg Extension Machine",
-            "Face Pulls",
-            "Heavy Bag",
             "Stick Flow",
             "Push-ups",
             "BW Squats AMRAP",
-            "Triceps Extensions",
+            "Leg Extension Machine",
+            "Face Pulls",
             "Tibialis Raises",
-            "RMT Club",
-            "DB Reverse Fly's",
-            "Walking Lunges",
-            "DB Curls",
-            "Calf Raises",
-            "Lat Pull-downs",
-            "Iron Neck",
-            "Hanging Leg Raises",
-            "Ab Roller"
+            "Jump Rope",
+            "Walking",
+            "Rope Flow"
           ]
         }
       }
@@ -1058,107 +1050,102 @@
       "state": {
         "last_seen": {
           "Shake, Tap & Twist Flow": 359,
-          "DB Overhead Press": 359,
+          "DB Overhead Press": 355,
           "BW Squats AMRAP": 359,
-          "Push-ups": 356,
+          "Push-ups": 359,
           "Stability Ball": 358,
-          "KB Halo": 359,
-          "Heavy Bag": 356,
+          "KB Halo": 354,
+          "Heavy Bag": 357,
           "Walking": 359,
           "Hanging (max hold)": 359,
           "Rope Flow": 357,
-          "Dips": 355,
+          "Dips": 357,
           "KB Swings": 355,
-          "Inversions": 356,
-          "DB Curls": 356,
+          "Inversions": 355,
+          "DB Curls": 355,
           "Jump Rope": 358,
           "Stick Flow": 358,
-          "DB Reverse Fly's": 358,
+          "DB Reverse Fly's": 356,
           "BOSU Squats": 357,
-          "Horse Stance (max hold)": 357,
-          "Tibialis Raises": 355,
-          "RMT Club": 357,
-          "Lat Pull-downs": 356,
+          "Horse Stance (max hold)": 358,
+          "Tibialis Raises": 359,
+          "RMT Club": 359,
+          "Lat Pull-downs": 358,
           "Face Pulls": 356,
-          "Calf Raises": 359,
-          "Sprints": 359,
-          "Seated Cable Rows": 357,
-          "Pistol Squats": 358,
+          "Calf Raises": 357,
+          "Sprints": 356,
+          "Seated Cable Rows": 356,
+          "Pistol Squats": 357,
           "Ab Roller": 358,
-          "Forearm Wrist Roller": 355,
-          "Delt Raises (front/side/rear)": 355,
-          "Walking Lunges": 353,
-          "Iron Neck": 354,
+          "Forearm Wrist Roller": 358,
+          "Delt Raises (front/side/rear)": 357,
+          "Walking Lunges": 358,
+          "Iron Neck": 355,
           "Triceps Extensions": 357,
-          "Hanging Leg Raises": 358,
-          "Leg Curl Machine": 352,
-          "Leg Extension Machine": 358,
-          "Deadlift (any variation)": 352,
-          "Monkeyfeet Lifts": 353
+          "Hanging Leg Raises": 356,
+          "Leg Curl Machine": 353,
+          "Leg Extension Machine": 359,
+          "Deadlift (any variation)": 353,
+          "Monkeyfeet Lifts": 354
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
             339,
-            341,
+            342,
             343,
             345,
-            347,
-            349,
+            348,
+            351,
             352,
-            355,
-            357,
+            353,
+            356,
             359
           ],
           "DB Overhead Press": [
-            339,
             343,
             349,
-            353,
-            359
+            355
           ],
           "BW Squats AMRAP": [
-            339,
-            342,
+            340,
             343,
             346,
             348,
-            350,
+            349,
             351,
             354,
             356,
             359
           ],
           "Push-ups": [
-            340,
-            345,
-            348,
-            351,
-            356
-          ],
-          "Stability Ball": [
-            339,
             341,
-            345,
-            348,
-            349,
+            346,
             350,
-            353,
-            357,
-            358
-          ],
-          "KB Halo": [
-            340,
-            347,
             354,
             359
           ],
+          "Stability Ball": [
+            340,
+            343,
+            345,
+            346,
+            348,
+            350,
+            353,
+            356,
+            358
+          ],
+          "KB Halo": [
+            342,
+            348,
+            354
+          ],
           "Heavy Bag": [
             340,
-            342,
             346,
-            351,
-            354,
-            356
+            348,
+            353,
+            357
           ],
           "Walking": [
             339,
@@ -1184,59 +1171,62 @@
             359
           ],
           "Hanging (max hold)": [
-            342,
+            341,
             344,
             347,
-            350,
+            349,
             352,
             355,
             359
           ],
           "Rope Flow": [
-            340,
+            339,
+            341,
             342,
             344,
-            345,
-            348,
+            347,
+            349,
+            350,
             351,
-            353,
-            356,
+            352,
+            355,
             357
           ],
           "Dips": [
+            339,
+            344,
+            349,
+            352,
+            357
+          ],
+          "KB Swings": [
             340,
             345,
             350,
             355
           ],
-          "KB Swings": [
-            343,
+          "Inversions": [
+            342,
+            346,
+            350,
+            355
+          ],
+          "DB Curls": [
+            339,
+            345,
             349,
             355
           ],
-          "Inversions": [
-            340,
-            343,
-            346,
-            349,
-            352,
-            356
-          ],
-          "DB Curls": [
-            341,
-            347,
-            351,
-            356
-          ],
           "Jump Rope": [
-            341,
-            345,
+            339,
+            343,
             347,
-            351,
-            355,
+            352,
+            354,
             358
           ],
           "Stick Flow": [
+            340,
             342,
             346,
             350,
@@ -1244,14 +1234,15 @@
             358
           ],
           "DB Reverse Fly's": [
+            339,
             342,
-            346,
-            350,
-            354,
-            358
+            347,
+            351,
+            356
           ],
           "BOSU Squats": [
-            341,
+            339,
+            342,
             345,
             348,
             351,
@@ -1259,151 +1250,151 @@
             357
           ],
           "Horse Stance (max hold)": [
-            341,
-            345,
-            348,
-            353,
-            357
-          ],
-          "Tibialis Raises": [
-            344,
-            348,
-            355
-          ],
-          "RMT Club": [
-            339,
-            344,
-            348,
-            353,
-            357
-          ],
-          "Lat Pull-downs": [
-            339,
-            344,
-            349,
-            356
-          ],
-          "Face Pulls": [
             340,
             346,
-            351,
-            356
-          ],
-          "Calf Raises": [
-            343,
-            347,
+            350,
             354,
-            359
+            358
           ],
-          "Sprints": [
+          "Tibialis Raises": [
             343,
-            352,
+            348,
+            353,
             359
           ],
-          "Seated Cable Rows": [
-            341,
-            347,
-            352,
-            357
+          "RMT Club": [
+            344,
+            351,
+            355,
+            359
           ],
-          "Pistol Squats": [
+          "Lat Pull-downs": [
             341,
             348,
             353,
             358
           ],
+          "Face Pulls": [
+            344,
+            349,
+            356
+          ],
+          "Calf Raises": [
+            344,
+            349,
+            357
+          ],
+          "Sprints": [
+            342,
+            349,
+            356
+          ],
+          "Seated Cable Rows": [
+            340,
+            345,
+            350,
+            356
+          ],
+          "Pistol Squats": [
+            341,
+            347,
+            352,
+            357
+          ],
           "Ab Roller": [
-            339,
-            346,
+            341,
+            347,
             352,
             358
           ],
           "Forearm Wrist Roller": [
-            344,
-            349,
-            355
+            341,
+            347,
+            352,
+            358
           ],
           "Delt Raises (front/side/rear)": [
             339,
-            345,
-            350,
-            355
+            346,
+            351,
+            357
           ],
           "Walking Lunges": [
-            340,
-            347,
-            353
+            343,
+            348,
+            353,
+            358
           ],
           "Iron Neck": [
-            346,
-            354
+            340,
+            347,
+            355
           ],
           "Triceps Extensions": [
-            343,
-            349,
+            344,
+            351,
             357
           ],
           "Hanging Leg Raises": [
-            342,
-            350,
-            358
+            345,
+            356
           ],
           "Leg Curl Machine": [
-            344,
-            352
+            345,
+            353
           ],
           "Leg Extension Machine": [
             341,
             350,
-            358
+            359
           ],
           "Deadlift (any variation)": [
             344,
-            352
+            353
           ],
           "Monkeyfeet Lifts": [
-            342,
-            353
+            343,
+            354
           ]
         },
         "cycle": {
-          "cycle_number": 35,
-          "start_day_index": 354,
+          "cycle_number": 34,
+          "start_day_index": 355,
           "seen_exercises": [
-            "Stick Flow",
+            "Rope Flow",
+            "DB Overhead Press",
+            "KB Swings",
+            "Iron Neck",
+            "DB Curls",
+            "Inversions",
+            "RMT Club",
+            "Walking",
+            "Hanging (max hold)",
+            "Shake, Tap & Twist Flow",
             "DB Reverse Fly's",
             "BW Squats AMRAP",
-            "KB Halo",
-            "Iron Neck",
-            "Calf Raises",
-            "Heavy Bag",
-            "Walking",
-            "BOSU Squats",
-            "Shake, Tap & Twist Flow",
-            "Dips",
-            "KB Swings",
-            "Tibialis Raises",
-            "Forearm Wrist Roller",
-            "Delt Raises (front/side/rear)",
-            "Jump Rope",
-            "Hanging (max hold)",
-            "Rope Flow",
-            "Push-ups",
-            "Lat Pull-downs",
-            "DB Curls",
-            "Face Pulls",
-            "Inversions",
             "Seated Cable Rows",
-            "Stability Ball",
-            "Triceps Extensions",
-            "Horse Stance (max hold)",
-            "RMT Club",
-            "Pistol Squats",
-            "Ab Roller",
             "Hanging Leg Raises",
-            "Leg Extension Machine",
-            "DB Overhead Press",
-            "Sprints"
+            "Face Pulls",
+            "Sprints",
+            "Stability Ball",
+            "Dips",
+            "Pistol Squats",
+            "Calf Raises",
+            "Delt Raises (front/side/rear)",
+            "Triceps Extensions",
+            "Heavy Bag",
+            "BOSU Squats",
+            "Stick Flow",
+            "Lat Pull-downs",
+            "Walking Lunges",
+            "Forearm Wrist Roller",
+            "Ab Roller",
+            "Horse Stance (max hold)",
+            "Jump Rope",
+            "Push-ups",
+            "Tibialis Raises",
+            "Leg Extension Machine"
           ]
         }
       }
@@ -1414,100 +1405,103 @@
       "state": {
         "last_seen": {
           "Shake, Tap & Twist Flow": 448,
-          "DB Overhead Press": 444,
-          "BW Squats AMRAP": 447,
-          "Push-ups": 446,
-          "Stability Ball": 447,
+          "DB Overhead Press": 448,
+          "BW Squats AMRAP": 448,
+          "Push-ups": 447,
+          "Stability Ball": 448,
           "KB Halo": 448,
           "Heavy Bag": 449,
           "Walking": 449,
           "Hanging (max hold)": 447,
-          "Rope Flow": 449,
+          "Rope Flow": 447,
           "Dips": 449,
-          "KB Swings": 449,
-          "Inversions": 449,
-          "DB Curls": 446,
-          "Jump Rope": 447,
-          "Stick Flow": 446,
-          "DB Reverse Fly's": 445,
-          "BOSU Squats": 448,
+          "KB Swings": 444,
+          "Inversions": 446,
+          "DB Curls": 445,
+          "Jump Rope": 445,
+          "Stick Flow": 449,
+          "DB Reverse Fly's": 447,
+          "BOSU Squats": 449,
           "Horse Stance (max hold)": 449,
-          "Tibialis Raises": 445,
-          "RMT Club": 444,
-          "Lat Pull-downs": 448,
-          "Face Pulls": 449,
-          "Calf Raises": 447,
+          "Tibialis Raises": 447,
+          "RMT Club": 446,
+          "Lat Pull-downs": 445,
+          "Face Pulls": 445,
+          "Calf Raises": 449,
           "Sprints": 448,
-          "Seated Cable Rows": 447,
+          "Seated Cable Rows": 446,
           "Pistol Squats": 446,
-          "Ab Roller": 446,
-          "Forearm Wrist Roller": 447,
-          "Delt Raises (front/side/rear)": 448,
-          "Walking Lunges": 446,
-          "Iron Neck": 446,
-          "Triceps Extensions": 449,
-          "Hanging Leg Raises": 445,
-          "Leg Curl Machine": 444,
-          "Leg Extension Machine": 448,
-          "Deadlift (any variation)": 447,
+          "Ab Roller": 447,
+          "Forearm Wrist Roller": 448,
+          "Delt Raises (front/side/rear)": 446,
+          "Walking Lunges": 447,
+          "Iron Neck": 448,
+          "Triceps Extensions": 444,
+          "Hanging Leg Raises": 442,
+          "Leg Curl Machine": 446,
+          "Leg Extension Machine": 449,
+          "Deadlift (any variation)": 449,
           "Monkeyfeet Lifts": 447
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
-            429,
+            430,
             432,
             435,
-            437,
+            438,
             440,
             443,
-            445,
+            444,
+            447,
             448
           ],
           "DB Overhead Press": [
-            433,
+            432,
             438,
-            444
+            444,
+            448
           ],
           "BW Squats AMRAP": [
             429,
-            432,
-            435,
-            437,
-            440,
-            443,
-            445,
-            447
-          ],
-          "Push-ups": [
-            431,
-            436,
-            441,
-            446
-          ],
-          "Stability Ball": [
-            430,
-            431,
             433,
-            437,
-            440,
+            436,
+            438,
             441,
             444,
             445,
+            448
+          ],
+          "Push-ups": [
+            432,
+            437,
+            442,
             447
           ],
+          "Stability Ball": [
+            430,
+            432,
+            435,
+            436,
+            438,
+            441,
+            443,
+            444,
+            446,
+            448
+          ],
           "KB Halo": [
-            433,
+            432,
             438,
             443,
             448
           ],
           "Heavy Bag": [
             429,
-            433,
+            432,
+            435,
             437,
             441,
-            443,
-            445,
+            444,
             449
           ],
           "Walking": [
@@ -1534,181 +1528,180 @@
             449
           ],
           "Hanging (max hold)": [
-            430,
+            429,
+            431,
             434,
-            438,
+            437,
+            439,
             442,
-            444,
+            445,
             447
           ],
           "Rope Flow": [
             431,
-            433,
+            434,
             436,
             439,
-            441,
+            442,
             444,
-            447,
-            448,
-            449
+            446,
+            447
           ],
           "Dips": [
-            429,
-            434,
-            439,
-            444,
+            430,
+            435,
+            440,
+            445,
             449
           ],
           "KB Swings": [
-            433,
-            438,
-            444,
-            449
+            434,
+            439,
+            444
           ],
           "Inversions": [
+            431,
+            436,
+            441,
+            446
+          ],
+          "DB Curls": [
+            434,
+            439,
+            445
+          ],
+          "Jump Rope": [
+            430,
+            434,
+            438,
+            439,
+            443,
+            445
+          ],
+          "Stick Flow": [
             429,
-            432,
+            433,
+            437,
+            441,
+            445,
+            449
+          ],
+          "DB Reverse Fly's": [
+            433,
+            438,
+            443,
+            447
+          ],
+          "BOSU Squats": [
+            430,
+            433,
             436,
             440,
             443,
             446,
             449
           ],
-          "DB Curls": [
-            430,
-            436,
-            441,
-            446
-          ],
-          "Jump Rope": [
-            432,
-            434,
-            439,
-            442,
-            447
-          ],
-          "Stick Flow": [
-            430,
-            434,
-            438,
-            442,
-            446
-          ],
-          "DB Reverse Fly's": [
-            432,
-            436,
-            440,
-            445
-          ],
-          "BOSU Squats": [
-            431,
-            435,
-            439,
-            442,
-            445,
-            448
-          ],
           "Horse Stance (max hold)": [
-            432,
-            437,
-            441,
+            429,
+            435,
+            440,
             445,
             449
           ],
           "Tibialis Raises": [
+            435,
+            441,
+            447
+          ],
+          "RMT Club": [
+            431,
+            436,
+            442,
+            446
+          ],
+          "Lat Pull-downs": [
+            429,
             434,
             439,
             445
           ],
-          "RMT Club": [
-            431,
-            435,
-            440,
-            444
-          ],
-          "Lat Pull-downs": [
-            432,
-            437,
-            443,
-            448
-          ],
           "Face Pulls": [
+            433,
+            439,
+            445
+          ],
+          "Calf Raises": [
             431,
             438,
             444,
             449
           ],
-          "Calf Raises": [
-            429,
-            436,
-            442,
-            447
-          ],
           "Sprints": [
-            430,
-            439,
+            433,
+            440,
             448
           ],
           "Seated Cable Rows": [
-            430,
-            435,
-            442,
-            447
+            431,
+            436,
+            441,
+            446
           ],
           "Pistol Squats": [
             430,
-            436,
+            435,
             441,
             446
           ],
           "Ab Roller": [
-            433,
-            439,
-            446
-          ],
-          "Forearm Wrist Roller": [
+            429,
             436,
             442,
             447
           ],
-          "Delt Raises (front/side/rear)": [
-            429,
+          "Forearm Wrist Roller": [
+            430,
             437,
             443,
             448
           ],
-          "Walking Lunges": [
-            434,
-            441,
-            446
-          ],
-          "Iron Neck": [
+          "Delt Raises (front/side/rear)": [
             432,
             439,
             446
           ],
-          "Triceps Extensions": [
+          "Walking Lunges": [
+            432,
+            437,
+            442,
+            447
+          ],
+          "Iron Neck": [
             434,
             442,
-            449
-          ],
-          "Hanging Leg Raises": [
-            435,
-            445
-          ],
-          "Leg Curl Machine": [
-            435,
-            444
-          ],
-          "Leg Extension Machine": [
-            431,
-            440,
             448
           ],
-          "Deadlift (any variation)": [
+          "Triceps Extensions": [
+            436,
+            444
+          ],
+          "Hanging Leg Raises": [
+            433,
+            442
+          ],
+          "Leg Curl Machine": [
+            437,
+            446
+          ],
+          "Leg Extension Machine": [
             430,
-            438,
-            447
+            440,
+            449
+          ],
+          "Deadlift (any variation)": [
+            431,
+            440,
+            449
           ],
           "Monkeyfeet Lifts": [
             438,
@@ -1716,25 +1709,26 @@
           ]
         },
         "cycle": {
-          "cycle_number": 44,
+          "cycle_number": 43,
           "start_day_index": 448,
           "seen_exercises": [
             "Shake, Tap & Twist Flow",
-            "Lat Pull-downs",
-            "BOSU Squats",
+            "DB Overhead Press",
+            "BW Squats AMRAP",
             "KB Halo",
-            "Leg Extension Machine",
-            "Delt Raises (front/side/rear)",
+            "Forearm Wrist Roller",
+            "Iron Neck",
             "Sprints",
             "Walking",
-            "Rope Flow",
+            "Stability Ball",
+            "Stick Flow",
             "Dips",
-            "KB Swings",
+            "Deadlift (any variation)",
             "Horse Stance (max hold)",
-            "Triceps Extensions",
-            "Face Pulls",
+            "Leg Extension Machine",
+            "Calf Raises",
             "Heavy Bag",
-            "Inversions"
+            "BOSU Squats"
           ]
         }
       }
@@ -1744,56 +1738,57 @@
       "iso_date": "2027-08-29",
       "state": {
         "last_seen": {
-          "Shake, Tap & Twist Flow": 538,
+          "Shake, Tap & Twist Flow": 539,
           "DB Overhead Press": 537,
-          "BW Squats AMRAP": 538,
+          "BW Squats AMRAP": 539,
           "Push-ups": 538,
-          "Stability Ball": 539,
-          "KB Halo": 537,
-          "Heavy Bag": 539,
+          "Stability Ball": 538,
+          "KB Halo": 536,
+          "Heavy Bag": 538,
           "Walking": 539,
-          "Hanging (max hold)": 538,
+          "Hanging (max hold)": 539,
           "Rope Flow": 537,
-          "Dips": 535,
-          "KB Swings": 539,
-          "Inversions": 536,
-          "DB Curls": 538,
-          "Jump Rope": 536,
-          "Stick Flow": 539,
-          "DB Reverse Fly's": 536,
+          "Dips": 536,
+          "KB Swings": 538,
+          "Inversions": 538,
+          "DB Curls": 537,
+          "Jump Rope": 535,
+          "Stick Flow": 538,
+          "DB Reverse Fly's": 539,
           "BOSU Squats": 537,
-          "Horse Stance (max hold)": 537,
-          "Tibialis Raises": 536,
-          "RMT Club": 538,
-          "Lat Pull-downs": 539,
-          "Face Pulls": 535,
-          "Calf Raises": 536,
-          "Sprints": 537,
-          "Seated Cable Rows": 534,
+          "Horse Stance (max hold)": 539,
+          "Tibialis Raises": 535,
+          "RMT Club": 539,
+          "Lat Pull-downs": 534,
+          "Face Pulls": 536,
+          "Calf Raises": 535,
+          "Sprints": 534,
+          "Seated Cable Rows": 536,
           "Pistol Squats": 538,
-          "Ab Roller": 539,
-          "Forearm Wrist Roller": 535,
-          "Delt Raises (front/side/rear)": 539,
-          "Walking Lunges": 536,
-          "Iron Neck": 538,
-          "Triceps Extensions": 535,
-          "Hanging Leg Raises": 533,
-          "Leg Curl Machine": 536,
+          "Ab Roller": 536,
+          "Forearm Wrist Roller": 539,
+          "Delt Raises (front/side/rear)": 537,
+          "Walking Lunges": 535,
+          "Iron Neck": 534,
+          "Triceps Extensions": 538,
+          "Hanging Leg Raises": 537,
+          "Leg Curl Machine": 533,
           "Leg Extension Machine": 539,
-          "Deadlift (any variation)": 533,
+          "Deadlift (any variation)": 537,
           "Monkeyfeet Lifts": 533
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
             520,
-            522,
+            523,
             525,
+            526,
             528,
-            530,
+            531,
             533,
+            535,
             536,
-            537,
-            538
+            539
           ],
           "DB Overhead Press": [
             522,
@@ -1802,15 +1797,15 @@
             537
           ],
           "BW Squats AMRAP": [
-            520,
-            523,
+            521,
+            524,
+            525,
             526,
-            527,
             529,
             532,
-            535,
-            537,
-            538
+            534,
+            536,
+            539
           ],
           "Push-ups": [
             520,
@@ -1820,29 +1815,31 @@
             538
           ],
           "Stability Ball": [
+            519,
             520,
             522,
             524,
-            528,
+            527,
+            529,
             530,
             532,
             533,
+            536,
             537,
-            539
+            538
           ],
           "KB Halo": [
             520,
             526,
-            532,
-            537
+            531,
+            536
           ],
           "Heavy Bag": [
-            521,
-            524,
-            527,
+            523,
+            525,
             529,
-            535,
-            539
+            533,
+            538
           ],
           "Walking": [
             519,
@@ -1870,16 +1867,19 @@
           "Hanging (max hold)": [
             521,
             523,
-            527,
-            529,
+            525,
+            528,
             531,
-            534,
-            538
+            533,
+            536,
+            539
           ],
           "Rope Flow": [
+            519,
             521,
+            522,
             524,
-            526,
+            527,
             529,
             532,
             534,
@@ -1889,39 +1889,42 @@
           "Dips": [
             521,
             526,
-            530,
-            535
-          ],
-          "KB Swings": [
-            521,
-            526,
             531,
-            536,
-            539
-          ],
-          "Inversions": [
-            519,
-            522,
-            525,
-            529,
-            533,
             536
           ],
-          "DB Curls": [
+          "KB Swings": [
             523,
-            529,
+            528,
+            533,
+            538
+          ],
+          "Inversions": [
+            522,
+            528,
             534,
             538
           ],
+          "DB Curls": [
+            521,
+            527,
+            532,
+            537
+          ],
           "Jump Rope": [
-            520,
-            522,
-            526,
+            521,
+            524,
             528,
             532,
-            536
+            535
           ],
           "Stick Flow": [
+            522,
+            526,
+            530,
+            534,
+            538
+          ],
+          "DB Reverse Fly's": [
             519,
             523,
             527,
@@ -1929,124 +1932,116 @@
             535,
             539
           ],
-          "DB Reverse Fly's": [
-            519,
-            523,
-            527,
-            531,
-            536
-          ],
           "BOSU Squats": [
-            519,
-            522,
-            525,
-            528,
+            520,
+            523,
+            526,
+            529,
             531,
             534,
             537
           ],
           "Horse Stance (max hold)": [
-            520,
-            524,
-            528,
-            532,
-            537
-          ],
-          "Tibialis Raises": [
             521,
             526,
-            531,
-            536
+            530,
+            535,
+            539
+          ],
+          "Tibialis Raises": [
+            519,
+            524,
+            529,
+            535
           ],
           "RMT Club": [
-            519,
-            525,
+            522,
+            526,
             531,
-            538
+            539
           ],
           "Lat Pull-downs": [
             524,
             529,
-            534,
-            539
+            534
           ],
           "Face Pulls": [
-            520,
-            525,
-            530,
-            535
-          ],
-          "Calf Raises": [
             519,
             525,
             530,
             536
           ],
+          "Calf Raises": [
+            520,
+            528,
+            535
+          ],
           "Sprints": [
-            526,
-            537
+            520,
+            527,
+            534
           ],
           "Seated Cable Rows": [
             519,
-            524,
-            529,
-            534
+            525,
+            530,
+            536
           ],
           "Pistol Squats": [
-            523,
-            528,
+            522,
+            527,
             533,
             538
           ],
           "Ab Roller": [
-            521,
-            527,
-            534,
-            539
+            524,
+            530,
+            536
           ],
           "Forearm Wrist Roller": [
             523,
-            529,
-            535
-          ],
-          "Delt Raises (front/side/rear)": [
-            522,
             528,
             534,
             539
           ],
+          "Delt Raises (front/side/rear)": [
+            519,
+            526,
+            532,
+            537
+          ],
           "Walking Lunges": [
-            520,
-            525,
+            519,
+            524,
             530,
-            536
+            535
           ],
           "Iron Neck": [
-            524,
+            525,
+            534
+          ],
+          "Triceps Extensions": [
+            523,
             531,
             538
           ],
-          "Triceps Extensions": [
-            519,
-            527,
-            535
-          ],
           "Hanging Leg Raises": [
+            527,
+            537
+          ],
+          "Leg Curl Machine": [
             523,
             533
           ],
-          "Leg Curl Machine": [
-            526,
-            536
-          ],
           "Leg Extension Machine": [
-            519,
-            530,
+            520,
+            529,
             539
           ],
           "Deadlift (any variation)": [
-            524,
-            533
+            520,
+            529,
+            537
           ],
           "Monkeyfeet Lifts": [
             522,
@@ -2054,44 +2049,45 @@
           ]
         },
         "cycle": {
-          "cycle_number": 52,
+          "cycle_number": 51,
           "start_day_index": 534,
           "seen_exercises": [
-            "Rope Flow",
+            "Stick Flow",
             "Lat Pull-downs",
             "BOSU Squats",
-            "Seated Cable Rows",
-            "Ab Roller",
-            "DB Curls",
-            "Delt Raises (front/side/rear)",
-            "Walking",
-            "Hanging (max hold)",
-            "Stick Flow",
-            "Dips",
             "BW Squats AMRAP",
-            "Triceps Extensions",
+            "Iron Neck",
+            "Inversions",
             "Forearm Wrist Roller",
-            "Face Pulls",
-            "Heavy Bag",
+            "Sprints",
+            "Walking",
+            "Rope Flow",
             "Shake, Tap & Twist Flow",
             "DB Reverse Fly's",
             "Walking Lunges",
-            "KB Swings",
-            "Leg Curl Machine",
             "Calf Raises",
+            "Horse Stance (max hold)",
             "Tibialis Raises",
             "Jump Rope",
-            "Inversions",
-            "DB Overhead Press",
-            "Horse Stance (max hold)",
-            "Stability Ball",
+            "Dips",
+            "Seated Cable Rows",
+            "Face Pulls",
+            "Ab Roller",
             "KB Halo",
-            "Sprints",
+            "Hanging (max hold)",
+            "Stability Ball",
+            "DB Overhead Press",
+            "Deadlift (any variation)",
+            "Hanging Leg Raises",
+            "DB Curls",
+            "Delt Raises (front/side/rear)",
             "Push-ups",
+            "KB Swings",
             "Pistol Squats",
-            "Iron Neck",
-            "RMT Club",
-            "Leg Extension Machine"
+            "Triceps Extensions",
+            "Heavy Bag",
+            "Leg Extension Machine",
+            "RMT Club"
           ]
         }
       }
@@ -2101,44 +2097,44 @@
       "iso_date": "2027-11-27",
       "state": {
         "last_seen": {
-          "Shake, Tap & Twist Flow": 629,
-          "DB Overhead Press": 629,
+          "Shake, Tap & Twist Flow": 628,
+          "DB Overhead Press": 625,
           "BW Squats AMRAP": 629,
-          "Push-ups": 625,
-          "Stability Ball": 629,
-          "KB Halo": 626,
-          "Heavy Bag": 629,
+          "Push-ups": 628,
+          "Stability Ball": 628,
+          "KB Halo": 625,
+          "Heavy Bag": 626,
           "Walking": 629,
-          "Hanging (max hold)": 628,
-          "Rope Flow": 628,
+          "Hanging (max hold)": 629,
+          "Rope Flow": 629,
           "Dips": 626,
-          "KB Swings": 625,
+          "KB Swings": 628,
           "Inversions": 628,
-          "DB Curls": 624,
-          "Jump Rope": 627,
+          "DB Curls": 626,
+          "Jump Rope": 629,
           "Stick Flow": 627,
-          "DB Reverse Fly's": 628,
+          "DB Reverse Fly's": 627,
           "BOSU Squats": 627,
-          "Horse Stance (max hold)": 628,
-          "Tibialis Raises": 627,
-          "RMT Club": 626,
-          "Lat Pull-downs": 625,
-          "Face Pulls": 629,
+          "Horse Stance (max hold)": 629,
+          "Tibialis Raises": 629,
+          "RMT Club": 628,
+          "Lat Pull-downs": 624,
+          "Face Pulls": 624,
           "Calf Raises": 627,
-          "Sprints": 628,
-          "Seated Cable Rows": 627,
-          "Pistol Squats": 626,
-          "Ab Roller": 626,
-          "Forearm Wrist Roller": 627,
+          "Sprints": 627,
+          "Seated Cable Rows": 629,
+          "Pistol Squats": 625,
+          "Ab Roller": 628,
+          "Forearm Wrist Roller": 626,
           "Delt Raises (front/side/rear)": 623,
-          "Walking Lunges": 628,
-          "Iron Neck": 625,
-          "Triceps Extensions": 629,
-          "Hanging Leg Raises": 625,
-          "Leg Curl Machine": 621,
-          "Leg Extension Machine": 619,
-          "Deadlift (any variation)": 622,
-          "Monkeyfeet Lifts": 628
+          "Walking Lunges": 624,
+          "Iron Neck": 623,
+          "Triceps Extensions": 628,
+          "Hanging Leg Raises": 627,
+          "Leg Curl Machine": 627,
+          "Leg Extension Machine": 622,
+          "Deadlift (any variation)": 627,
+          "Monkeyfeet Lifts": 619
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
@@ -2149,54 +2145,54 @@
             621,
             624,
             626,
-            629
+            628
           ],
           "DB Overhead Press": [
-            611,
-            617,
-            623,
-            629
+            614,
+            620,
+            625
           ],
           "BW Squats AMRAP": [
-            610,
+            611,
             613,
             616,
             619,
-            620,
-            624,
-            627,
-            629
-          ],
-          "Push-ups": [
-            612,
-            616,
-            621,
-            625
-          ],
-          "Stability Ball": [
-            609,
-            611,
-            615,
-            617,
-            621,
-            623,
-            624,
+            622,
+            625,
             626,
             629
           ],
-          "KB Halo": [
+          "Push-ups": [
+            609,
             613,
+            618,
+            623,
+            628
+          ],
+          "Stability Ball": [
+            610,
+            613,
+            615,
+            616,
             620,
-            626
+            622,
+            624,
+            625,
+            628
+          ],
+          "KB Halo": [
+            612,
+            619,
+            625
           ],
           "Heavy Bag": [
-            609,
+            610,
             612,
-            615,
-            617,
-            621,
+            616,
+            618,
+            622,
             624,
-            629
+            626
           ],
           "Walking": [
             609,
@@ -2222,56 +2218,58 @@
             629
           ],
           "Hanging (max hold)": [
+            609,
             612,
             614,
-            618,
-            622,
-            625,
-            628
+            617,
+            621,
+            623,
+            626,
+            629
           ],
           "Rope Flow": [
             609,
             612,
             614,
-            615,
             617,
             620,
             622,
             625,
             626,
-            628
+            629
           ],
           "Dips": [
-            612,
-            618,
-            623,
+            610,
+            616,
+            621,
             626
           ],
           "KB Swings": [
             612,
-            618,
-            625
+            617,
+            623,
+            628
           ],
           "Inversions": [
-            610,
-            613,
-            616,
+            609,
+            614,
             620,
             624,
             628
           ],
           "DB Curls": [
-            613,
-            619,
-            624
+            609,
+            614,
+            621,
+            626
           ],
           "Jump Rope": [
-            610,
-            614,
-            618,
-            619,
-            623,
-            627
+            611,
+            615,
+            617,
+            621,
+            625,
+            629
           ],
           "Stick Flow": [
             611,
@@ -2281,136 +2279,164 @@
             627
           ],
           "DB Reverse Fly's": [
-            613,
-            619,
-            624,
-            628
-          ],
-          "BOSU Squats": [
             610,
             615,
             619,
+            623,
+            627
+          ],
+          "BOSU Squats": [
+            611,
+            614,
+            618,
+            621,
             624,
             627
           ],
           "Horse Stance (max hold)": [
-            609,
-            614,
-            620,
-            624,
-            628
+            610,
+            615,
+            621,
+            625,
+            629
           ],
           "Tibialis Raises": [
             611,
-            616,
-            622,
-            627
-          ],
-          "RMT Club": [
-            611,
-            616,
-            622,
-            626
-          ],
-          "Lat Pull-downs": [
-            609,
-            614,
-            620,
-            625
-          ],
-          "Face Pulls": [
-            611,
-            617,
-            623,
+            618,
+            624,
             629
           ],
+          "RMT Club": [
+            609,
+            614,
+            619,
+            623,
+            628
+          ],
+          "Lat Pull-downs": [
+            612,
+            617,
+            624
+          ],
+          "Face Pulls": [
+            612,
+            618,
+            624
+          ],
           "Calf Raises": [
-            610,
-            616,
+            609,
+            615,
             622,
             627
           ],
           "Sprints": [
             613,
             620,
-            628
+            627
           ],
           "Seated Cable Rows": [
-            610,
-            615,
+            611,
+            616,
             622,
-            627
+            629
           ],
           "Pistol Squats": [
-            609,
-            616,
-            621,
-            626
+            610,
+            615,
+            620,
+            625
           ],
           "Ab Roller": [
-            609,
-            614,
-            621,
-            626
-          ],
-          "Forearm Wrist Roller": [
             614,
             622,
-            627
+            628
+          ],
+          "Forearm Wrist Roller": [
+            613,
+            620,
+            626
           ],
           "Delt Raises (front/side/rear)": [
-            612,
-            618,
+            610,
+            616,
             623
           ],
           "Walking Lunges": [
-            611,
-            617,
-            623,
-            628
+            612,
+            618,
+            624
           ],
           "Iron Neck": [
-            609,
-            617,
-            625
+            616,
+            623
           ],
           "Triceps Extensions": [
-            612,
+            613,
             621,
-            629
+            628
           ],
           "Hanging Leg Raises": [
-            615,
-            625
+            617,
+            627
           ],
           "Leg Curl Machine": [
-            610,
-            621
+            617,
+            627
           ],
           "Leg Extension Machine": [
-            619
-          ],
-          "Deadlift (any variation)": [
-            614,
+            611,
             622
           ],
+          "Deadlift (any variation)": [
+            609,
+            619,
+            627
+          ],
           "Monkeyfeet Lifts": [
-            618,
-            628
+            619
           ]
         },
         "cycle": {
-          "cycle_number": 61,
-          "start_day_index": 629,
+          "cycle_number": 59,
+          "start_day_index": 620,
           "seen_exercises": [
-            "Shake, Tap & Twist Flow",
+            "Rope Flow",
             "DB Overhead Press",
-            "BW Squats AMRAP",
-            "Triceps Extensions",
-            "Face Pulls",
-            "Heavy Bag",
+            "Pistol Squats",
+            "Inversions",
+            "Forearm Wrist Roller",
+            "Sprints",
             "Walking",
-            "Stability Ball"
+            "Stability Ball",
+            "Shake, Tap & Twist Flow",
+            "Dips",
+            "BOSU Squats",
+            "Horse Stance (max hold)",
+            "DB Curls",
+            "Triceps Extensions",
+            "Jump Rope",
+            "Hanging (max hold)",
+            "Seated Cable Rows",
+            "BW Squats AMRAP",
+            "Leg Extension Machine",
+            "Ab Roller",
+            "Calf Raises",
+            "Heavy Bag",
+            "Stick Flow",
+            "Push-ups",
+            "KB Swings",
+            "DB Reverse Fly's",
+            "Delt Raises (front/side/rear)",
+            "Iron Neck",
+            "RMT Club",
+            "Lat Pull-downs",
+            "Walking Lunges",
+            "Tibialis Raises",
+            "Face Pulls",
+            "KB Halo",
+            "Deadlift (any variation)",
+            "Leg Curl Machine",
+            "Hanging Leg Raises"
           ]
         }
       }
@@ -2422,99 +2448,101 @@
         "last_seen": {
           "Shake, Tap & Twist Flow": 718,
           "DB Overhead Press": 715,
-          "BW Squats AMRAP": 718,
-          "Push-ups": 717,
-          "Stability Ball": 719,
-          "KB Halo": 716,
+          "BW Squats AMRAP": 719,
+          "Push-ups": 714,
+          "Stability Ball": 718,
+          "KB Halo": 717,
           "Heavy Bag": 719,
           "Walking": 719,
-          "Hanging (max hold)": 718,
-          "Rope Flow": 719,
-          "Dips": 716,
-          "KB Swings": 716,
+          "Hanging (max hold)": 719,
+          "Rope Flow": 717,
+          "Dips": 717,
+          "KB Swings": 717,
           "Inversions": 718,
           "DB Curls": 716,
-          "Jump Rope": 717,
-          "Stick Flow": 716,
+          "Jump Rope": 718,
+          "Stick Flow": 719,
           "DB Reverse Fly's": 718,
           "BOSU Squats": 717,
           "Horse Stance (max hold)": 719,
-          "Tibialis Raises": 719,
-          "RMT Club": 718,
-          "Lat Pull-downs": 719,
+          "Tibialis Raises": 713,
+          "RMT Club": 717,
+          "Lat Pull-downs": 716,
           "Face Pulls": 714,
-          "Calf Raises": 716,
-          "Sprints": 713,
-          "Seated Cable Rows": 714,
-          "Pistol Squats": 719,
-          "Ab Roller": 715,
-          "Forearm Wrist Roller": 718,
-          "Delt Raises (front/side/rear)": 717,
+          "Calf Raises": 714,
+          "Sprints": 715,
+          "Seated Cable Rows": 719,
+          "Pistol Squats": 718,
+          "Ab Roller": 716,
+          "Forearm Wrist Roller": 719,
+          "Delt Raises (front/side/rear)": 718,
           "Walking Lunges": 714,
-          "Iron Neck": 715,
-          "Triceps Extensions": 713,
-          "Hanging Leg Raises": 713,
-          "Leg Curl Machine": 711,
-          "Leg Extension Machine": 717,
-          "Deadlift (any variation)": 710,
-          "Monkeyfeet Lifts": 711
+          "Iron Neck": 716,
+          "Triceps Extensions": 715,
+          "Hanging Leg Raises": 709,
+          "Leg Curl Machine": 715,
+          "Leg Extension Machine": 713,
+          "Deadlift (any variation)": 715,
+          "Monkeyfeet Lifts": 717
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
-            699,
-            701,
-            704,
-            707,
+            700,
+            702,
+            705,
+            708,
             709,
-            711,
+            710,
             712,
-            715,
+            714,
+            716,
             718
           ],
           "DB Overhead Press": [
-            704,
+            702,
             709,
             715
           ],
           "BW Squats AMRAP": [
+            699,
             701,
             703,
             704,
-            706,
+            707,
+            710,
+            713,
+            716,
+            719
+          ],
+          "Push-ups": [
+            699,
+            704,
             709,
+            714
+          ],
+          "Stability Ball": [
+            699,
+            702,
+            703,
+            704,
+            707,
+            709,
+            711,
             712,
             715,
             718
           ],
-          "Push-ups": [
-            702,
-            707,
-            712,
+          "KB Halo": [
+            700,
+            705,
+            711,
             717
           ],
-          "Stability Ball": [
-            701,
-            703,
-            706,
-            707,
-            708,
-            711,
-            715,
-            717,
-            719
-          ],
-          "KB Halo": [
-            699,
-            705,
-            710,
-            716
-          ],
           "Heavy Bag": [
-            701,
-            703,
-            707,
+            700,
+            704,
             710,
-            712,
+            713,
             716,
             719
           ],
@@ -2542,225 +2570,201 @@
             719
           ],
           "Hanging (max hold)": [
-            700,
-            704,
-            708,
+            701,
+            705,
+            707,
             710,
-            712,
+            714,
             716,
-            718
+            719
           ],
           "Rope Flow": [
-            700,
-            703,
-            705,
+            701,
+            704,
+            706,
             708,
-            709,
+            710,
             711,
             713,
             715,
-            717,
-            719
+            717
           ],
           "Dips": [
-            699,
-            705,
-            710,
-            716
+            702,
+            707,
+            712,
+            717
           ],
           "KB Swings": [
             700,
             705,
-            709,
-            716
+            711,
+            717
           ],
           "Inversions": [
-            699,
             704,
-            707,
-            710,
-            713,
+            708,
+            712,
             718
           ],
           "DB Curls": [
-            699,
+            701,
             705,
             710,
             716
           ],
           "Jump Rope": [
-            700,
-            704,
+            703,
+            707,
+            711,
+            714,
+            718
+          ],
+          "Stick Flow": [
+            699,
+            703,
+            707,
             708,
             711,
             715,
-            717
-          ],
-          "Stick Flow": [
-            702,
-            706,
-            710,
-            714,
-            716
+            719
           ],
           "DB Reverse Fly's": [
-            700,
             703,
             708,
             713,
             718
           ],
           "BOSU Squats": [
-            699,
-            702,
-            705,
-            708,
-            711,
-            714,
+            700,
+            703,
+            706,
+            709,
+            713,
             717
           ],
           "Horse Stance (max hold)": [
-            700,
+            702,
             706,
-            709,
+            710,
             714,
             719
           ],
           "Tibialis Raises": [
             702,
             707,
-            714,
-            719
+            713
           ],
           "RMT Club": [
+            701,
             705,
-            709,
-            714,
-            718
+            712,
+            717
           ],
           "Lat Pull-downs": [
+            700,
+            705,
+            710,
+            716
+          ],
+          "Face Pulls": [
+            701,
+            707,
+            714
+          ],
+          "Calf Raises": [
+            702,
+            708,
+            714
+          ],
+          "Sprints": [
+            699,
+            708,
+            715
+          ],
+          "Seated Cable Rows": [
             701,
             706,
             711,
             719
           ],
-          "Face Pulls": [
-            703,
-            708,
-            714
-          ],
-          "Calf Raises": [
-            704,
-            709,
-            716
-          ],
-          "Sprints": [
-            699,
-            706,
-            713
-          ],
-          "Seated Cable Rows": [
-            700,
-            706,
-            714
-          ],
           "Pistol Squats": [
-            702,
-            707,
-            713,
-            719
-          ],
-          "Ab Roller": [
-            702,
-            708,
-            715
-          ],
-          "Forearm Wrist Roller": [
-            701,
+            700,
             706,
             712,
             718
           ],
-          "Delt Raises (front/side/rear)": [
+          "Ab Roller": [
+            703,
+            709,
+            716
+          ],
+          "Forearm Wrist Roller": [
             700,
             706,
             712,
-            717
+            719
+          ],
+          "Delt Raises (front/side/rear)": [
+            704,
+            711,
+            718
           ],
           "Walking Lunges": [
-            703,
+            702,
             708,
             714
           ],
           "Iron Neck": [
             701,
+            708,
+            716
+          ],
+          "Triceps Extensions": [
+            699,
             707,
             715
           ],
-          "Triceps Extensions": [
-            705,
-            713
-          ],
           "Hanging Leg Raises": [
+            699,
+            709
+          ],
+          "Leg Curl Machine": [
+            705,
+            715
+          ],
+          "Leg Extension Machine": [
             703,
             713
           ],
-          "Leg Curl Machine": [
-            702,
-            711
-          ],
-          "Leg Extension Machine": [
-            707,
-            717
-          ],
           "Deadlift (any variation)": [
-            702,
-            710
+            706,
+            715
           ],
           "Monkeyfeet Lifts": [
-            701,
-            711
+            706,
+            717
           ]
         },
         "cycle": {
-          "cycle_number": 69,
-          "start_day_index": 712,
+          "cycle_number": 68,
+          "start_day_index": 718,
           "seen_exercises": [
             "Shake, Tap & Twist Flow",
-            "Push-ups",
-            "BW Squats AMRAP",
-            "Delt Raises (front/side/rear)",
-            "Forearm Wrist Roller",
-            "Heavy Bag",
-            "Walking",
-            "Hanging (max hold)",
-            "Rope Flow",
             "DB Reverse Fly's",
             "Pistol Squats",
-            "Hanging Leg Raises",
-            "Triceps Extensions",
-            "Sprints",
             "Inversions",
+            "Delt Raises (front/side/rear)",
+            "Jump Rope",
+            "Walking",
+            "Stability Ball",
             "Stick Flow",
             "Seated Cable Rows",
-            "Walking Lunges",
-            "Tibialis Raises",
+            "BW Squats AMRAP",
+            "Forearm Wrist Roller",
             "Horse Stance (max hold)",
-            "Face Pulls",
-            "RMT Club",
-            "BOSU Squats",
-            "DB Overhead Press",
-            "Iron Neck",
-            "Ab Roller",
-            "Jump Rope",
-            "Stability Ball",
-            "Dips",
-            "KB Swings",
-            "Calf Raises",
-            "DB Curls",
-            "KB Halo",
-            "Leg Extension Machine",
-            "Lat Pull-downs"
+            "Heavy Bag",
+            "Hanging (max hold)"
           ]
         }
       }
@@ -2770,102 +2774,104 @@
       "iso_date": "2028-05-25",
       "state": {
         "last_seen": {
-          "Shake, Tap & Twist Flow": 808,
-          "DB Overhead Press": 804,
-          "BW Squats AMRAP": 809,
+          "Shake, Tap & Twist Flow": 809,
+          "DB Overhead Press": 806,
+          "BW Squats AMRAP": 808,
           "Push-ups": 808,
-          "Stability Ball": 807,
-          "KB Halo": 808,
-          "Heavy Bag": 808,
+          "Stability Ball": 808,
+          "KB Halo": 805,
+          "Heavy Bag": 807,
           "Walking": 809,
           "Hanging (max hold)": 809,
-          "Rope Flow": 809,
+          "Rope Flow": 808,
           "Dips": 807,
-          "KB Swings": 806,
-          "Inversions": 808,
-          "DB Curls": 809,
+          "KB Swings": 807,
+          "Inversions": 809,
+          "DB Curls": 807,
           "Jump Rope": 806,
           "Stick Flow": 807,
           "DB Reverse Fly's": 809,
-          "BOSU Squats": 807,
-          "Horse Stance (max hold)": 809,
+          "BOSU Squats": 806,
+          "Horse Stance (max hold)": 806,
           "Tibialis Raises": 807,
           "RMT Club": 809,
-          "Lat Pull-downs": 805,
-          "Face Pulls": 804,
-          "Calf Raises": 806,
-          "Sprints": 807,
-          "Seated Cable Rows": 806,
-          "Pistol Squats": 808,
+          "Lat Pull-downs": 803,
+          "Face Pulls": 808,
+          "Calf Raises": 809,
+          "Sprints": 808,
+          "Seated Cable Rows": 804,
+          "Pistol Squats": 809,
           "Ab Roller": 809,
           "Forearm Wrist Roller": 808,
-          "Delt Raises (front/side/rear)": 804,
-          "Walking Lunges": 807,
-          "Iron Neck": 806,
+          "Delt Raises (front/side/rear)": 806,
+          "Walking Lunges": 806,
+          "Iron Neck": 807,
           "Triceps Extensions": 806,
-          "Hanging Leg Raises": 803,
-          "Leg Curl Machine": 801,
+          "Hanging Leg Raises": 801,
+          "Leg Curl Machine": 804,
           "Leg Extension Machine": 808,
-          "Deadlift (any variation)": 802,
-          "Monkeyfeet Lifts": 807
+          "Deadlift (any variation)": 805,
+          "Monkeyfeet Lifts": 804
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
-            789,
-            792,
-            794,
-            797,
-            800,
-            802,
-            805,
-            808
+            790,
+            793,
+            796,
+            798,
+            801,
+            804,
+            806,
+            809
           ],
           "DB Overhead Press": [
-            792,
-            798,
-            804
+            794,
+            800,
+            806
           ],
           "BW Squats AMRAP": [
             791,
-            795,
-            797,
-            800,
-            803,
+            793,
+            796,
+            798,
+            801,
+            802,
             804,
             807,
-            809
+            808
           ],
           "Push-ups": [
-            793,
-            799,
+            789,
+            795,
+            800,
             803,
             808
           ],
           "Stability Ball": [
             789,
-            791,
-            795,
+            790,
+            792,
+            794,
             797,
             798,
-            799,
-            801,
-            803,
-            807
+            800,
+            802,
+            804,
+            807,
+            808
           ],
           "KB Halo": [
-            791,
-            797,
-            803,
-            808
+            793,
+            799,
+            805
           ],
           "Heavy Bag": [
-            789,
+            790,
             793,
-            795,
-            797,
-            801,
+            796,
+            800,
             804,
-            808
+            807
           ],
           "Walking": [
             789,
@@ -2891,56 +2897,56 @@
             809
           ],
           "Hanging (max hold)": [
-            790,
-            794,
+            791,
+            793,
             796,
-            800,
-            804,
-            806,
+            799,
+            801,
+            803,
+            805,
             809
           ],
           "Rope Flow": [
-            790,
-            793,
+            789,
+            792,
+            794,
             796,
-            798,
-            801,
-            804,
+            797,
+            800,
+            802,
             805,
-            806,
-            809
+            808
           ],
           "Dips": [
+            790,
+            796,
+            801,
+            807
+          ],
+          "KB Swings": [
             792,
             797,
             802,
             807
           ],
-          "KB Swings": [
-            789,
-            796,
-            801,
-            806
-          ],
           "Inversions": [
             789,
-            792,
-            795,
-            798,
-            801,
-            805,
-            808
-          ],
-          "DB Curls": [
             794,
             800,
-            804,
+            805,
             809
           ],
+          "DB Curls": [
+            791,
+            796,
+            802,
+            807
+          ],
           "Jump Rope": [
-            790,
-            794,
-            798,
+            789,
+            791,
+            795,
+            799,
             802,
             806
           ],
@@ -2952,149 +2958,162 @@
             807
           ],
           "DB Reverse Fly's": [
-            789,
-            794,
-            800,
-            804,
+            792,
+            797,
+            802,
+            805,
             809
           ],
           "BOSU Squats": [
-            790,
-            793,
-            796,
-            799,
-            802,
-            805,
-            807
+            792,
+            795,
+            798,
+            801,
+            803,
+            806
           ],
           "Horse Stance (max hold)": [
-            790,
-            795,
+            792,
+            796,
             801,
-            805,
-            809
+            806
           ],
           "Tibialis Raises": [
-            790,
-            796,
+            789,
+            795,
             802,
             807
           ],
           "RMT Club": [
-            791,
-            796,
-            800,
+            792,
+            798,
             805,
             809
           ],
           "Lat Pull-downs": [
-            790,
-            795,
-            800,
-            805
+            791,
+            798,
+            803
           ],
           "Face Pulls": [
-            793,
-            798,
-            804
-          ],
-          "Calf Raises": [
-            793,
-            801,
-            806
-          ],
-          "Sprints": [
-            792,
-            799,
-            807
-          ],
-          "Seated Cable Rows": [
             791,
-            796,
-            801,
-            806
-          ],
-          "Pistol Squats": [
-            793,
-            798,
+            797,
             803,
             808
           ],
+          "Calf Raises": [
+            791,
+            798,
+            804,
+            809
+          ],
+          "Sprints": [
+            794,
+            801,
+            808
+          ],
+          "Seated Cable Rows": [
+            793,
+            799,
+            804
+          ],
+          "Pistol Squats": [
+            789,
+            794,
+            799,
+            804,
+            809
+          ],
           "Ab Roller": [
             790,
-            796,
+            797,
             803,
             809
           ],
           "Forearm Wrist Roller": [
             795,
-            802,
+            803,
             808
           ],
           "Delt Raises (front/side/rear)": [
-            792,
-            798,
-            804
+            794,
+            801,
+            806
           ],
           "Walking Lunges": [
-            792,
-            797,
-            802,
-            807
+            790,
+            795,
+            800,
+            806
           ],
           "Iron Neck": [
             792,
             800,
-            806
+            807
           ],
           "Triceps Extensions": [
-            791,
+            790,
             799,
             806
           ],
           "Hanging Leg Raises": [
-            794,
-            803
-          ],
-          "Leg Curl Machine": [
-            791,
+            790,
             801
           ],
+          "Leg Curl Machine": [
+            795,
+            804
+          ],
           "Leg Extension Machine": [
-            789,
-            799,
+            798,
             808
           ],
           "Deadlift (any variation)": [
-            794,
-            802
+            797,
+            805
           ],
           "Monkeyfeet Lifts": [
-            797,
-            807
+            793,
+            804
           ]
         },
         "cycle": {
-          "cycle_number": 78,
-          "start_day_index": 808,
+          "cycle_number": 76,
+          "start_day_index": 805,
           "seen_exercises": [
-            "Shake, Tap & Twist Flow",
-            "Push-ups",
-            "Pistol Squats",
-            "Forearm Wrist Roller",
-            "KB Halo",
-            "Leg Extension Machine",
-            "Heavy Bag",
-            "Walking",
-            "Inversions",
             "Rope Flow",
             "DB Reverse Fly's",
-            "BW Squats AMRAP",
-            "DB Curls",
-            "Horse Stance (max hold)",
-            "Ab Roller",
+            "Deadlift (any variation)",
+            "KB Halo",
+            "Inversions",
             "RMT Club",
-            "Hanging (max hold)"
+            "Walking",
+            "Hanging (max hold)",
+            "Shake, Tap & Twist Flow",
+            "DB Overhead Press",
+            "Walking Lunges",
+            "Horse Stance (max hold)",
+            "Triceps Extensions",
+            "Delt Raises (front/side/rear)",
+            "Jump Rope",
+            "BOSU Squats",
+            "Stick Flow",
+            "Dips",
+            "BW Squats AMRAP",
+            "KB Swings",
+            "Tibialis Raises",
+            "DB Curls",
+            "Iron Neck",
+            "Heavy Bag",
+            "Stability Ball",
+            "Push-ups",
+            "Leg Extension Machine",
+            "Face Pulls",
+            "Forearm Wrist Roller",
+            "Sprints",
+            "Pistol Squats",
+            "Ab Roller",
+            "Calf Raises"
           ]
         }
       }
@@ -3105,100 +3124,101 @@
       "state": {
         "last_seen": {
           "Shake, Tap & Twist Flow": 898,
-          "DB Overhead Press": 895,
-          "BW Squats AMRAP": 899,
-          "Push-ups": 899,
-          "Stability Ball": 898,
-          "KB Halo": 894,
-          "Heavy Bag": 899,
+          "DB Overhead Press": 898,
+          "BW Squats AMRAP": 897,
+          "Push-ups": 898,
+          "Stability Ball": 899,
+          "KB Halo": 897,
+          "Heavy Bag": 896,
           "Walking": 899,
-          "Hanging (max hold)": 896,
-          "Rope Flow": 897,
-          "Dips": 896,
+          "Hanging (max hold)": 898,
+          "Rope Flow": 899,
+          "Dips": 899,
           "KB Swings": 895,
-          "Inversions": 899,
-          "DB Curls": 896,
+          "Inversions": 895,
+          "DB Curls": 899,
           "Jump Rope": 899,
-          "Stick Flow": 899,
-          "DB Reverse Fly's": 897,
-          "BOSU Squats": 897,
-          "Horse Stance (max hold)": 898,
-          "Tibialis Raises": 897,
-          "RMT Club": 896,
-          "Lat Pull-downs": 898,
+          "Stick Flow": 897,
+          "DB Reverse Fly's": 896,
+          "BOSU Squats": 899,
+          "Horse Stance (max hold)": 896,
+          "Tibialis Raises": 894,
+          "RMT Club": 897,
+          "Lat Pull-downs": 895,
           "Face Pulls": 895,
-          "Calf Raises": 896,
-          "Sprints": 897,
-          "Seated Cable Rows": 893,
+          "Calf Raises": 894,
+          "Sprints": 898,
+          "Seated Cable Rows": 897,
           "Pistol Squats": 898,
-          "Ab Roller": 898,
-          "Forearm Wrist Roller": 894,
-          "Delt Raises (front/side/rear)": 895,
-          "Walking Lunges": 898,
-          "Iron Neck": 899,
-          "Triceps Extensions": 895,
+          "Ab Roller": 895,
+          "Forearm Wrist Roller": 893,
+          "Delt Raises (front/side/rear)": 898,
+          "Walking Lunges": 897,
+          "Iron Neck": 897,
+          "Triceps Extensions": 894,
           "Hanging Leg Raises": 889,
-          "Leg Curl Machine": 893,
-          "Leg Extension Machine": 897,
+          "Leg Curl Machine": 899,
+          "Leg Extension Machine": 896,
           "Deadlift (any variation)": 896,
-          "Monkeyfeet Lifts": 893
+          "Monkeyfeet Lifts": 892
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
             880,
             882,
-            885,
-            888,
-            889,
-            890,
-            892,
-            896,
-            898
-          ],
-          "DB Overhead Press": [
-            883,
-            889,
-            895
-          ],
-          "BW Squats AMRAP": [
-            879,
-            882,
-            885,
-            888,
-            891,
-            894,
-            897,
-            899
-          ],
-          "Push-ups": [
-            881,
-            886,
-            891,
-            894,
-            899
-          ],
-          "Stability Ball": [
-            880,
             884,
-            886,
             887,
-            888,
-            892,
+            890,
+            891,
+            894,
             895,
             898
           ],
-          "KB Halo": [
-            883,
-            888,
-            894
-          ],
-          "Heavy Bag": [
+          "DB Overhead Press": [
             880,
-            884,
+            886,
+            892,
+            898
+          ],
+          "BW Squats AMRAP": [
+            880,
+            883,
+            885,
             888,
             891,
             894,
+            897
+          ],
+          "Push-ups": [
+            882,
+            887,
+            893,
+            898
+          ],
+          "Stability Ball": [
+            882,
+            884,
+            886,
+            888,
+            890,
+            892,
+            894,
+            898,
             899
+          ],
+          "KB Halo": [
+            880,
+            885,
+            891,
+            897
+          ],
+          "Heavy Bag": [
+            879,
+            883,
+            885,
+            889,
+            894,
+            896
           ],
           "Walking": [
             879,
@@ -3224,222 +3244,224 @@
             899
           ],
           "Hanging (max hold)": [
-            882,
-            884,
+            881,
+            883,
+            885,
             887,
-            891,
-            894,
-            896
+            889,
+            893,
+            895,
+            898
           ],
           "Rope Flow": [
-            881,
-            884,
-            885,
+            879,
+            880,
+            883,
             886,
-            889,
+            888,
+            891,
             892,
-            893,
             894,
-            897
+            896,
+            899
           ],
           "Dips": [
-            880,
-            885,
-            890,
-            896
+            881,
+            886,
+            889,
+            894,
+            899
           ],
           "KB Swings": [
-            883,
+            882,
             889,
             895
           ],
           "Inversions": [
-            879,
-            883,
-            887,
-            890,
-            894,
-            899
-          ],
-          "DB Curls": [
             882,
             887,
             891,
-            896
+            895
+          ],
+          "DB Curls": [
+            883,
+            887,
+            893,
+            899
           ],
           "Jump Rope": [
-            881,
-            885,
-            889,
-            893,
+            880,
+            884,
+            888,
+            892,
             895,
             899
           ],
           "Stick Flow": [
             879,
-            883,
-            887,
-            891,
-            895,
-            899
+            881,
+            885,
+            889,
+            893,
+            897
           ],
           "DB Reverse Fly's": [
             883,
             887,
-            892,
-            897
+            891,
+            896
           ],
           "BOSU Squats": [
-            881,
-            884,
+            883,
             887,
             890,
             893,
-            897
+            896,
+            899
           ],
           "Horse Stance (max hold)": [
-            882,
-            885,
-            890,
-            894,
-            898
-          ],
-          "Tibialis Raises": [
-            881,
-            886,
-            891,
-            897
-          ],
-          "RMT Club": [
             879,
-            887,
+            884,
+            888,
             892,
             896
           ],
+          "Tibialis Raises": [
+            883,
+            888,
+            894
+          ],
+          "RMT Club": [
+            881,
+            886,
+            893,
+            897
+          ],
           "Lat Pull-downs": [
-            879,
             884,
-            890,
-            898
+            888,
+            895
           ],
           "Face Pulls": [
-            879,
-            885,
+            884,
             890,
             895
           ],
           "Calf Raises": [
-            883,
-            890,
-            896
+            882,
+            888,
+            894
           ],
           "Sprints": [
             882,
+            891,
+            898
+          ],
+          "Seated Cable Rows": [
+            879,
+            885,
             890,
             897
           ],
-          "Seated Cable Rows": [
-            882,
-            888,
-            893
-          ],
           "Pistol Squats": [
-            880,
+            881,
             886,
             892,
             898
           ],
           "Ab Roller": [
-            880,
-            886,
-            892,
-            898
+            884,
+            890,
+            895
           ],
           "Forearm Wrist Roller": [
-            881,
+            882,
             887,
-            894
+            893
           ],
           "Delt Raises (front/side/rear)": [
-            883,
-            889,
-            895
-          ],
-          "Walking Lunges": [
-            881,
-            886,
-            893,
+            879,
+            885,
+            891,
             898
           ],
-          "Iron Neck": [
+          "Walking Lunges": [
+            879,
             884,
-            891,
-            899
+            890,
+            897
+          ],
+          "Iron Neck": [
+            883,
+            890,
+            897
           ],
           "Triceps Extensions": [
-            880,
-            888,
-            895
+            886,
+            894
           ],
           "Hanging Leg Raises": [
-            879,
+            880,
             889
           ],
           "Leg Curl Machine": [
-            884,
-            893
+            881,
+            889,
+            899
           ],
           "Leg Extension Machine": [
-            888,
-            897
+            886,
+            896
           ],
           "Deadlift (any variation)": [
             887,
             896
           ],
           "Monkeyfeet Lifts": [
-            882,
-            893
+            881,
+            892
           ]
         },
         "cycle": {
-          "cycle_number": 86,
-          "start_day_index": 894,
+          "cycle_number": 84,
+          "start_day_index": 893,
           "seen_exercises": [
-            "Rope Flow",
-            "Push-ups",
-            "BW Squats AMRAP",
-            "Forearm Wrist Roller",
-            "KB Halo",
-            "Horse Stance (max hold)",
-            "Heavy Bag",
-            "Walking",
-            "Inversions",
-            "Hanging (max hold)",
             "Stick Flow",
-            "DB Overhead Press",
-            "KB Swings",
-            "Delt Raises (front/side/rear)",
-            "Face Pulls",
-            "Triceps Extensions",
-            "Jump Rope",
-            "Stability Ball",
+            "Push-ups",
+            "BOSU Squats",
+            "DB Curls",
+            "Forearm Wrist Roller",
+            "RMT Club",
+            "Walking",
+            "Hanging (max hold)",
             "Shake, Tap & Twist Flow",
             "Dips",
-            "Deadlift (any variation)",
-            "Calf Raises",
-            "DB Curls",
-            "RMT Club",
-            "DB Reverse Fly's",
+            "BW Squats AMRAP",
+            "Triceps Extensions",
             "Tibialis Raises",
-            "Leg Extension Machine",
-            "Sprints",
-            "BOSU Squats",
+            "Calf Raises",
+            "Heavy Bag",
+            "Stability Ball",
+            "Rope Flow",
             "Lat Pull-downs",
-            "Pistol Squats",
-            "Walking Lunges",
+            "KB Swings",
+            "Inversions",
+            "Face Pulls",
             "Ab Roller",
-            "Iron Neck"
+            "Jump Rope",
+            "DB Reverse Fly's",
+            "Deadlift (any variation)",
+            "Leg Extension Machine",
+            "Horse Stance (max hold)",
+            "Seated Cable Rows",
+            "Walking Lunges",
+            "KB Halo",
+            "Iron Neck",
+            "DB Overhead Press",
+            "Pistol Squats",
+            "Delt Raises (front/side/rear)",
+            "Sprints",
+            "Leg Curl Machine"
           ]
         }
       }
@@ -3449,85 +3471,86 @@
       "iso_date": "2028-11-21",
       "state": {
         "last_seen": {
-          "Shake, Tap & Twist Flow": 987,
-          "DB Overhead Press": 985,
-          "BW Squats AMRAP": 989,
-          "Push-ups": 989,
+          "Shake, Tap & Twist Flow": 989,
+          "DB Overhead Press": 984,
+          "BW Squats AMRAP": 988,
+          "Push-ups": 987,
           "Stability Ball": 989,
-          "KB Halo": 987,
-          "Heavy Bag": 988,
+          "KB Halo": 988,
+          "Heavy Bag": 989,
           "Walking": 989,
           "Hanging (max hold)": 988,
-          "Rope Flow": 989,
-          "Dips": 986,
-          "KB Swings": 985,
-          "Inversions": 987,
+          "Rope Flow": 988,
+          "Dips": 985,
+          "KB Swings": 987,
+          "Inversions": 986,
           "DB Curls": 988,
-          "Jump Rope": 989,
-          "Stick Flow": 988,
-          "DB Reverse Fly's": 987,
+          "Jump Rope": 988,
+          "Stick Flow": 986,
+          "DB Reverse Fly's": 988,
           "BOSU Squats": 987,
-          "Horse Stance (max hold)": 985,
-          "Tibialis Raises": 989,
-          "RMT Club": 987,
-          "Lat Pull-downs": 984,
-          "Face Pulls": 986,
-          "Calf Raises": 988,
-          "Sprints": 982,
-          "Seated Cable Rows": 988,
-          "Pistol Squats": 988,
-          "Ab Roller": 986,
-          "Forearm Wrist Roller": 984,
-          "Delt Raises (front/side/rear)": 985,
-          "Walking Lunges": 986,
-          "Iron Neck": 984,
-          "Triceps Extensions": 989,
-          "Hanging Leg Raises": 988,
-          "Leg Curl Machine": 983,
-          "Leg Extension Machine": 982,
-          "Deadlift (any variation)": 984,
-          "Monkeyfeet Lifts": 980
+          "Horse Stance (max hold)": 989,
+          "Tibialis Raises": 987,
+          "RMT Club": 985,
+          "Lat Pull-downs": 986,
+          "Face Pulls": 989,
+          "Calf Raises": 985,
+          "Sprints": 984,
+          "Seated Cable Rows": 989,
+          "Pistol Squats": 989,
+          "Ab Roller": 985,
+          "Forearm Wrist Roller": 987,
+          "Delt Raises (front/side/rear)": 984,
+          "Walking Lunges": 985,
+          "Iron Neck": 988,
+          "Triceps Extensions": 983,
+          "Hanging Leg Raises": 982,
+          "Leg Curl Machine": 986,
+          "Leg Extension Machine": 980,
+          "Deadlift (any variation)": 983,
+          "Monkeyfeet Lifts": 979
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
-            969,
             971,
             972,
             974,
-            977,
-            979,
-            982,
-            983,
-            985,
-            987
-          ],
-          "DB Overhead Press": [
-            974,
-            979,
-            985
-          ],
-          "BW Squats AMRAP": [
-            970,
-            973,
             976,
-            978,
-            981,
+            977,
+            980,
+            982,
             984,
             987,
             989
           ],
+          "DB Overhead Press": [
+            971,
+            977,
+            984
+          ],
+          "BW Squats AMRAP": [
+            971,
+            972,
+            975,
+            978,
+            981,
+            984,
+            986,
+            988
+          ],
           "Push-ups": [
             972,
             977,
-            983,
-            989
+            982,
+            987
           ],
           "Stability Ball": [
             972,
+            973,
             974,
-            975,
-            977,
-            980,
+            976,
+            978,
+            981,
             983,
             985,
             987,
@@ -3537,17 +3560,16 @@
             970,
             976,
             982,
-            987
+            988
           ],
           "Heavy Bag": [
-            969,
-            972,
-            976,
+            971,
+            974,
             978,
-            980,
-            984,
-            986,
-            988
+            981,
+            983,
+            987,
+            989
           ],
           "Walking": [
             969,
@@ -3573,225 +3595,225 @@
             989
           ],
           "Hanging (max hold)": [
-            970,
-            973,
+            969,
+            971,
             975,
-            978,
-            982,
+            977,
+            979,
+            983,
             986,
             988
           ],
           "Rope Flow": [
-            970,
+            969,
             972,
             973,
             975,
-            978,
+            977,
+            979,
             981,
             983,
-            986,
-            989
+            985,
+            988
           ],
           "Dips": [
-            971,
-            976,
-            981,
-            986
-          ],
-          "KB Swings": [
-            969,
-            974,
-            979,
+            970,
+            975,
+            980,
             985
           ],
-          "Inversions": [
-            971,
-            974,
-            977,
-            981,
-            984,
+          "KB Swings": [
+            970,
+            976,
+            982,
             987
           ],
-          "DB Curls": [
+          "Inversions": [
             973,
+            978,
+            982,
+            986
+          ],
+          "DB Curls": [
+            971,
             978,
             983,
             988
           ],
           "Jump Rope": [
-            971,
+            969,
             973,
-            977,
-            981,
-            985,
-            989
-          ],
-          "Stick Flow": [
-            972,
-            976,
-            980,
-            984,
+            975,
+            979,
+            982,
+            986,
             988
           ],
-          "DB Reverse Fly's": [
-            969,
-            973,
-            977,
+          "Stick Flow": [
+            970,
+            972,
+            975,
+            978,
             982,
-            987
+            986
+          ],
+          "DB Reverse Fly's": [
+            973,
+            978,
+            983,
+            988
           ],
           "BOSU Squats": [
-            969,
-            972,
-            976,
-            979,
-            983,
+            970,
+            974,
+            977,
+            980,
+            984,
             987
           ],
           "Horse Stance (max hold)": [
-            972,
-            977,
-            981,
-            985
+            969,
+            974,
+            980,
+            984,
+            989
           ],
           "Tibialis Raises": [
+            975,
+            981,
+            987
+          ],
+          "RMT Club": [
+            972,
+            976,
+            980,
+            985
+          ],
+          "Lat Pull-downs": [
+            969,
+            974,
+            979,
+            986
+          ],
+          "Face Pulls": [
             971,
             977,
             983,
             989
           ],
-          "RMT Club": [
-            970,
-            975,
-            979,
-            983,
-            987
-          ],
-          "Lat Pull-downs": [
-            971,
-            978,
-            984
-          ],
-          "Face Pulls": [
-            974,
-            980,
-            986
-          ],
           "Calf Raises": [
-            969,
-            976,
-            982,
-            988
+            972,
+            979,
+            985
           ],
           "Sprints": [
-            974,
-            982
+            970,
+            977,
+            984
           ],
           "Seated Cable Rows": [
-            970,
-            975,
-            980,
-            988
+            971,
+            976,
+            981,
+            989
           ],
           "Pistol Squats": [
-            971,
-            977,
-            982,
-            988
+            973,
+            979,
+            984,
+            989
           ],
           "Ab Roller": [
-            975,
-            981,
-            986
+            972,
+            979,
+            985
           ],
           "Forearm Wrist Roller": [
             973,
-            979,
-            984
+            981,
+            987
           ],
           "Delt Raises (front/side/rear)": [
-            972,
-            979,
-            985
-          ],
-          "Walking Lunges": [
-            974,
-            980,
-            986
-          ],
-          "Iron Neck": [
-            971,
-            978,
+            970,
+            977,
             984
           ],
-          "Triceps Extensions": [
+          "Walking Lunges": [
+            969,
+            974,
+            980,
+            985
+          ],
+          "Iron Neck": [
             974,
             981,
-            989
-          ],
-          "Hanging Leg Raises": [
-            970,
-            979,
             988
           ],
-          "Leg Curl Machine": [
+          "Triceps Extensions": [
             975,
             983
           ],
-          "Leg Extension Machine": [
+          "Hanging Leg Raises": [
             973,
             982
           ],
-          "Deadlift (any variation)": [
-            975,
-            984
+          "Leg Curl Machine": [
+            976,
+            986
           ],
-          "Monkeyfeet Lifts": [
+          "Leg Extension Machine": [
             969,
             980
+          ],
+          "Deadlift (any variation)": [
+            974,
+            983
+          ],
+          "Monkeyfeet Lifts": [
+            979
           ]
         },
         "cycle": {
-          "cycle_number": 94,
-          "start_day_index": 981,
+          "cycle_number": 92,
+          "start_day_index": 980,
           "seen_exercises": [
-            "Rope Flow",
-            "Dips",
-            "BW Squats AMRAP",
-            "Horse Stance (max hold)",
-            "Triceps Extensions",
-            "Ab Roller",
-            "Jump Rope",
-            "Walking",
-            "Inversions",
             "Shake, Tap & Twist Flow",
-            "DB Reverse Fly's",
-            "Pistol Squats",
-            "KB Halo",
-            "Calf Raises",
+            "Dips",
+            "Walking Lunges",
             "Leg Extension Machine",
-            "Sprints",
-            "Hanging (max hold)",
-            "Push-ups",
-            "BOSU Squats",
-            "Tibialis Raises",
-            "DB Curls",
-            "Leg Curl Machine",
+            "Horse Stance (max hold)",
             "RMT Club",
+            "Walking",
+            "BOSU Squats",
+            "Rope Flow",
+            "Seated Cable Rows",
+            "BW Squats AMRAP",
+            "Forearm Wrist Roller",
+            "Tibialis Raises",
+            "Iron Neck",
+            "Heavy Bag",
             "Stability Ball",
             "Stick Flow",
-            "Lat Pull-downs",
-            "Deadlift (any variation)",
-            "Iron Neck",
-            "Forearm Wrist Roller",
-            "Heavy Bag",
-            "DB Overhead Press",
+            "Push-ups",
             "KB Swings",
-            "Delt Raises (front/side/rear)",
-            "Walking Lunges",
+            "KB Halo",
+            "Inversions",
+            "Hanging Leg Raises",
+            "Jump Rope",
+            "DB Reverse Fly's",
+            "Deadlift (any variation)",
             "Face Pulls",
-            "Seated Cable Rows",
-            "Hanging Leg Raises"
+            "DB Curls",
+            "Triceps Extensions",
+            "Hanging (max hold)",
+            "DB Overhead Press",
+            "Pistol Squats",
+            "Delt Raises (front/side/rear)",
+            "Sprints",
+            "Calf Raises",
+            "Ab Roller",
+            "Lat Pull-downs",
+            "Leg Curl Machine"
           ]
         }
       }
@@ -3802,101 +3824,104 @@
       "state": {
         "last_seen": {
           "Shake, Tap & Twist Flow": 1079,
-          "DB Overhead Press": 1078,
-          "BW Squats AMRAP": 1078,
-          "Push-ups": 1075,
-          "Stability Ball": 1078,
-          "KB Halo": 1078,
-          "Heavy Bag": 1078,
+          "DB Overhead Press": 1079,
+          "BW Squats AMRAP": 1079,
+          "Push-ups": 1078,
+          "Stability Ball": 1079,
+          "KB Halo": 1074,
+          "Heavy Bag": 1077,
           "Walking": 1079,
-          "Hanging (max hold)": 1077,
+          "Hanging (max hold)": 1076,
           "Rope Flow": 1079,
           "Dips": 1076,
-          "KB Swings": 1074,
-          "Inversions": 1079,
-          "DB Curls": 1076,
-          "Jump Rope": 1077,
-          "Stick Flow": 1076,
-          "DB Reverse Fly's": 1079,
+          "KB Swings": 1077,
+          "Inversions": 1076,
+          "DB Curls": 1078,
+          "Jump Rope": 1076,
+          "Stick Flow": 1078,
+          "DB Reverse Fly's": 1077,
           "BOSU Squats": 1077,
-          "Horse Stance (max hold)": 1076,
-          "Tibialis Raises": 1079,
-          "RMT Club": 1076,
-          "Lat Pull-downs": 1073,
-          "Face Pulls": 1079,
-          "Calf Raises": 1075,
-          "Sprints": 1072,
-          "Seated Cable Rows": 1077,
-          "Pistol Squats": 1079,
+          "Horse Stance (max hold)": 1078,
+          "Tibialis Raises": 1075,
+          "RMT Club": 1075,
+          "Lat Pull-downs": 1079,
+          "Face Pulls": 1078,
+          "Calf Raises": 1077,
+          "Sprints": 1078,
+          "Seated Cable Rows": 1075,
+          "Pistol Squats": 1075,
           "Ab Roller": 1079,
-          "Forearm Wrist Roller": 1078,
-          "Delt Raises (front/side/rear)": 1075,
-          "Walking Lunges": 1076,
-          "Iron Neck": 1077,
-          "Triceps Extensions": 1077,
-          "Hanging Leg Raises": 1078,
-          "Leg Curl Machine": 1073,
+          "Forearm Wrist Roller": 1077,
+          "Delt Raises (front/side/rear)": 1079,
+          "Walking Lunges": 1078,
+          "Iron Neck": 1075,
+          "Triceps Extensions": 1074,
+          "Hanging Leg Raises": 1076,
+          "Leg Curl Machine": 1079,
           "Leg Extension Machine": 1072,
-          "Deadlift (any variation)": 1079,
+          "Deadlift (any variation)": 1074,
           "Monkeyfeet Lifts": 1076
         },
         "appearances": {
           "Shake, Tap & Twist Flow": [
+            1059,
             1061,
             1063,
-            1066,
-            1069,
+            1065,
+            1068,
             1071,
-            1074,
-            1077,
+            1073,
+            1076,
             1079
           ],
           "DB Overhead Press": [
-            1062,
-            1068,
-            1072,
-            1078
+            1061,
+            1067,
+            1073,
+            1079
           ],
           "BW Squats AMRAP": [
             1059,
             1062,
-            1064,
-            1067,
+            1063,
+            1066,
             1069,
-            1072,
-            1075,
-            1078
+            1070,
+            1073,
+            1076,
+            1079
           ],
           "Push-ups": [
-            1060,
-            1065,
-            1070,
-            1075
+            1063,
+            1068,
+            1074,
+            1078
           ],
           "Stability Ball": [
             1059,
+            1060,
             1062,
             1065,
             1067,
+            1069,
             1070,
             1073,
-            1074,
             1075,
-            1078
+            1078,
+            1079
           ],
           "KB Halo": [
-            1060,
-            1066,
-            1072,
-            1078
+            1062,
+            1068,
+            1074
           ],
           "Heavy Bag": [
-            1061,
-            1063,
-            1067,
-            1071,
-            1075,
-            1078
+            1060,
+            1062,
+            1066,
+            1069,
+            1073,
+            1077
           ],
           "Walking": [
             1059,
@@ -3922,183 +3947,180 @@
             1079
           ],
           "Hanging (max hold)": [
-            1059,
-            1063,
+            1061,
+            1064,
             1066,
             1068,
             1072,
             1074,
-            1077
+            1076
           ],
           "Rope Flow": [
             1059,
             1060,
-            1062,
-            1065,
+            1063,
+            1064,
             1067,
             1069,
-            1070,
-            1073,
+            1071,
+            1072,
             1075,
-            1078,
+            1077,
             1079
           ],
           "Dips": [
             1061,
-            1067,
+            1066,
             1071,
             1076
           ],
           "KB Swings": [
-            1063,
-            1068,
-            1074
+            1062,
+            1067,
+            1072,
+            1077
           ],
           "Inversions": [
-            1061,
-            1064,
-            1068,
+            1062,
+            1067,
             1071,
-            1073,
-            1076,
-            1079
+            1076
           ],
           "DB Curls": [
-            1061,
-            1066,
-            1070,
-            1076
+            1063,
+            1068,
+            1072,
+            1078
           ],
           "Jump Rope": [
             1059,
-            1062,
-            1066,
-            1069,
-            1073,
-            1077
-          ],
-          "Stick Flow": [
-            1060,
-            1064,
+            1063,
             1068,
             1072,
             1076
           ],
-          "DB Reverse Fly's": [
-            1061,
+          "Stick Flow": [
+            1062,
             1066,
             1070,
             1074,
-            1079
+            1078
+          ],
+          "DB Reverse Fly's": [
+            1060,
+            1064,
+            1068,
+            1072,
+            1077
           ],
           "BOSU Squats": [
-            1059,
+            1061,
             1063,
-            1067,
+            1068,
             1071,
             1074,
             1077
           ],
           "Horse Stance (max hold)": [
             1059,
-            1063,
-            1067,
-            1071,
-            1076
+            1064,
+            1069,
+            1074,
+            1078
           ],
           "Tibialis Raises": [
-            1064,
+            1062,
+            1069,
+            1075
+          ],
+          "RMT Club": [
+            1061,
+            1065,
+            1070,
+            1075
+          ],
+          "Lat Pull-downs": [
+            1062,
             1069,
             1074,
             1079
           ],
-          "RMT Club": [
-            1060,
-            1065,
-            1070,
-            1076
-          ],
-          "Lat Pull-downs": [
-            1063,
-            1068,
-            1073
-          ],
           "Face Pulls": [
-            1061,
-            1067,
-            1074,
-            1079
+            1059,
+            1066,
+            1071,
+            1078
           ],
           "Calf Raises": [
             1064,
-            1069,
-            1075
+            1070,
+            1077
           ],
           "Sprints": [
             1064,
-            1072
+            1071,
+            1078
           ],
           "Seated Cable Rows": [
             1059,
-            1064,
-            1069,
-            1077
+            1065,
+            1070,
+            1075
           ],
           "Pistol Squats": [
-            1061,
-            1066,
-            1073,
-            1079
+            1059,
+            1064,
+            1070,
+            1075
           ],
           "Ab Roller": [
-            1060,
+            1061,
             1067,
-            1074,
+            1073,
             1079
           ],
           "Forearm Wrist Roller": [
-            1059,
-            1066,
-            1073,
-            1078
+            1065,
+            1070,
+            1077
           ],
           "Delt Raises (front/side/rear)": [
-            1062,
-            1068,
-            1075
+            1061,
+            1067,
+            1073,
+            1079
           ],
           "Walking Lunges": [
             1060,
-            1065,
-            1071,
-            1076
-          ],
-          "Iron Neck": [
-            1065,
-            1070,
-            1077
-          ],
-          "Triceps Extensions": [
-            1062,
-            1069,
-            1077
-          ],
-          "Hanging Leg Raises": [
-            1068,
+            1067,
+            1073,
             1078
           ],
+          "Iron Neck": [
+            1060,
+            1068,
+            1075
+          ],
+          "Triceps Extensions": [
+            1066,
+            1074
+          ],
+          "Hanging Leg Raises": [
+            1066,
+            1076
+          ],
           "Leg Curl Machine": [
-            1063,
-            1073
+            1060,
+            1069,
+            1079
           ],
           "Leg Extension Machine": [
-            1062,
+            1063,
             1072
           ],
           "Deadlift (any variation)": [
-            1062,
-            1070,
-            1079
+            1065,
+            1074
           ],
           "Monkeyfeet Lifts": [
             1065,
@@ -4106,32 +4128,32 @@
           ]
         },
         "cycle": {
-          "cycle_number": 103,
+          "cycle_number": 101,
           "start_day_index": 1077,
           "seen_exercises": [
-            "Shake, Tap & Twist Flow",
-            "Seated Cable Rows",
-            "BOSU Squats",
-            "Triceps Extensions",
-            "Iron Neck",
-            "Jump Rope",
-            "Walking",
-            "Hanging (max hold)",
             "Rope Flow",
+            "DB Reverse Fly's",
+            "KB Swings",
+            "Forearm Wrist Roller",
+            "Calf Raises",
+            "Heavy Bag",
+            "Walking",
+            "BOSU Squats",
+            "Stick Flow",
+            "Push-ups",
+            "Walking Lunges",
+            "Face Pulls",
+            "DB Curls",
+            "Horse Stance (max hold)",
+            "Sprints",
+            "Stability Ball",
+            "Shake, Tap & Twist Flow",
             "DB Overhead Press",
             "BW Squats AMRAP",
-            "KB Halo",
-            "Hanging Leg Raises",
-            "Forearm Wrist Roller",
-            "Heavy Bag",
-            "Stability Ball",
-            "DB Reverse Fly's",
-            "Pistol Squats",
-            "Deadlift (any variation)",
-            "Tibialis Raises",
-            "Face Pulls",
+            "Lat Pull-downs",
+            "Leg Curl Machine",
             "Ab Roller",
-            "Inversions"
+            "Delt Raises (front/side/rear)"
           ]
         }
       }
