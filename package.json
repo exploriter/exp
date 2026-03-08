@@ -4,14 +4,15 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf _site",
+    "checkpoints:generate": "node --experimental-strip-types scripts/generate-movement-checkpoints.ts",
     "tailwind:watch": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --watch",
     "js:watch:main": "npx esbuild _includes/js/main.js --bundle --outfile=_includes/js/bundle.js --watch",
     "js:watch:movement": "npx esbuild _includes/js/movement-entry.js --bundle --outfile=_includes/js/movement-bundle.js --watch",
     "js:watch": "npm-run-all --parallel js:watch:main js:watch:movement",
     "eleventy:serve": "npx @11ty/eleventy --serve",
-    "dev": "npm run clean && npm-run-all --parallel tailwind:watch js:watch eleventy:serve",
-    "build": "npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --minify && npx esbuild _includes/js/main.js --bundle --minify --outfile=_includes/js/bundle.js && npx esbuild _includes/js/movement-entry.js --bundle --minify --outfile=_includes/js/movement-bundle.js && npx @11ty/eleventy",
-    "typecheck": "tsc --noEmit"
+    "dev": "npm run clean && npm run checkpoints:generate && npm-run-all --parallel tailwind:watch js:watch eleventy:serve",
+    "build": "npm run checkpoints:generate && npx @tailwindcss/cli -i _includes/css/input.css -o _includes/css/output.css --minify && npx esbuild _includes/js/main.js --bundle --minify --outfile=_includes/js/bundle.js && npx esbuild _includes/js/movement-entry.js --bundle --minify --outfile=_includes/js/movement-bundle.js && npx @11ty/eleventy",
+    "typecheck": "npm run checkpoints:generate && tsc --noEmit"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
@@ -21,6 +22,7 @@
     "tippy.js": "^6.3.7"
   },
   "devDependencies": {
+    "@types/node": "^25.3.5",
     "esbuild": "^0.27.2",
     "npm-run-all2": "^8.0.4",
     "typescript": "^5.8.2"

@@ -107,8 +107,7 @@
       "movement_zone": "neutral",
       "slot_affinity": {
         "flow": 1,
-        "accessory": 5,
-        "micro": 1
+        "accessory": 5
       },
       "movement_patterns": [
         "structural"
@@ -126,8 +125,7 @@
     "Conditioning": {
       "movement_zone": "neutral",
       "slot_affinity": {
-        "conditioning": 5,
-        "micro": 1
+        "conditioning": 5
       },
       "movement_patterns": [
         "conditioning"

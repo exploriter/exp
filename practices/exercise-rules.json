@@ -283,7 +283,7 @@
          "name": "Hanging (max hold)",
          "category": "Structural",
          "rules": {
-            "min_rest_days_between_sessions": 0,
+            "min_rest_days_between_sessions": 1,
             "max_rest_days_between_sessions": 3,
             "max_sessions_per_day": 2,
             "target_sessions_per_week": 3
@@ -377,6 +377,16 @@
             "max_rest_days_between_sessions": 6,
             "max_sessions_per_day": 1,
             "target_sessions_per_week": 1
+         }
+      },
+      {
+         "name": "Shake, Tap & Twist Flow",
+         "category": "Flow",
+         "rules": {
+            "min_rest_days_between_sessions": 0,
+            "max_rest_days_between_sessions": 2,
+            "max_sessions_per_day": 3,
+            "target_sessions_per_week": 5
          }
       }
    ]
